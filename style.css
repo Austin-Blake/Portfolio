@@ -6,20 +6,25 @@
     font-weight: 400;
     line-height: 1.5rem;
 }
-
+html {
+    min-width: 360px;
+}
+body {
+    min-height: 100vh;
+}
 #page-container {
-    height: 60rem;
+    max-height: 100%;
+    background-color: #85c7ca;
   }
 
 .nav-container {
     display: inline-flex;
     flex-direction: row;
-    justify-content: end;
+    justify-content: space-evenly;
     align-items: center;
     width: 100%;
     height: 4rem;
-    background-color: #ffffff;
-    color: #b28e5c; 
+    background-color: #85c7ca;
     border-bottom: .1rem solid #b28e5c;
 }
 
@@ -27,7 +32,7 @@
     display: inline;
     padding-right: 1em;
     font-size: 1.5em;
-    color: #b28e5c;
+    color: #2d2d2d;
 }
 
 .list a {
@@ -39,9 +44,11 @@
     font-size: 1.5rem;
     text-decoration: underline;
 }
-
-.banner_container {
-    
+.banner h2{
+    position: relative;
+    top: 12rem;
+    left: 1rem;
+    font-size: 2rem;
 }
 
 .banner-img {
@@ -59,17 +66,18 @@
 }
 
 .main {
+    min-height: 100vh;
     display: grid;
     grid-template-columns: 10rem 1fr;
-    grid-template-rows: 42rem;
+    background-color: #85c7ca;
 }
 
 .main-title {
     display: inline-block;
-    font-size: 2.5rem;
+    font-size: 3rem;
     font-family: "Cinzel",sans-serif;
-    line-height: 1.8rem;
-    padding: 2rem;
+    line-height: 3rem;
+    padding: 1rem;
 }
 
 .secondary-title {
@@ -83,11 +91,12 @@
 
 .skills li {
     list-style: disc;
-    font-weight: 600;
-    color:#8a7454;
+    font-weight: 400;
+    color:#454545;
 }
+
 .skills {
-    color:#8a7454;
+    color:#454545;
     text-align: left;
     display: block;
     max-width: 8rem;
@@ -96,28 +105,49 @@
     margin: 1rem .2rem 1rem 1rem;
     border: solid .1px #cac5c5;
     border-radius: 1rem;
-    box-shadow: 8px 5px 5px #858581 ;
+    box-shadow: 8px 5px 5px #484848 ;
     background-image: url('docs/hugo-barbosa-TnG2q8FtXsg-unsplash.jpg');
     background-size:contain;
     background-repeat: no-repeat;
-    background-color: rgb(196, 196, 193);
+    background-color: rgb(218, 218, 218);
 }
+hr {
+    color: white;
+    }
 
 .skills h3 {
+    position:relative;
+    bottom: 1rem;
     font-weight: 600;
+    border:3px white solid;
+    padding: .2rem;
+
 }
 .history {
     font-family: "Vollkorn", sans-serif;
-    color: #b28e5c;
+    color: #2c2c2c;
     padding-right: .7rem;
-    height: auto;
+    padding-bottom: 2rem;
+}
+
+.images {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 .moto-website {
-    box-shadow: 10px 10px 5px darkgray;
+    box-shadow: 10px 10px 5px rgb(62, 62, 62);
     padding: .2rem;
-    border: .2px #dfdede solid;
-    border-radius: 10%;
+    border: 1px #315158 solid;
+    border-radius: 8%;
+    background-color: #ffffff;
     height: 9rem;
+    margin-bottom: 1rem;
+}
+
+.images a:hover {
+    padding: .3rem;
 }
 
 .about h2 {
@@ -131,6 +161,7 @@
     text-align:center;
     width: 100%;
     margin-top: 1rem;
+    padding-bottom: 4rem;
 }
 
 .about h3 {
@@ -151,10 +182,13 @@ text-decoration: underline;
 }
 
 .footer-nav {
-    position: sticky;
-    text-align: center;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items:center;
     height: 3rem;
-    border-top: 2px solid #b28e5c;
+    border-top: 2px solid #000000;
+    overflow: hidden;
 }
 
 .nav-list li {
