@@ -8,7 +8,7 @@
 }
 
 #page-container {
-    min-height: 100%;
+    height: 60rem;
   }
 
 .nav-container {
@@ -42,12 +42,10 @@
 
 .banner_container {
     
-    width: 100%;
-    overflow: hidden ;
 }
 
-.banner-img { 
-    background-image: url("/domenico-loia-EhTcC9sYXsw-unsplash.jpg");
+.banner-img {
+    width: 100%;
     border: 1px black solid;    
 }
 
@@ -63,6 +61,7 @@
 .main {
     display: grid;
     grid-template-columns: 10rem 1fr;
+    grid-template-rows: 42rem;
 }
 
 .main-title {
@@ -82,18 +81,30 @@
     border-top: .1rem solid #b28e5c;
 }
 
-
+.skills li {
+    list-style: disc;
+    font-weight: 600;
+    color:#8a7454;
+}
 .skills {
-    color:#b28e5c;
-    background-color: #e2e2e0;
-    text-align: center;
+    color:#8a7454;
+    text-align: left;
     display: block;
     max-width: 8rem;
     max-height: 31rem;
     padding: 1.2rem;
     margin: 1rem .2rem 1rem 1rem;
-    border: solid .1px #b28e5c;
+    border: solid .1px #cac5c5;
     border-radius: 1rem;
+    box-shadow: 8px 5px 5px #858581 ;
+    background-image: url('docs/hugo-barbosa-TnG2q8FtXsg-unsplash.jpg');
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-color: rgb(196, 196, 193);
+}
+
+.skills h3 {
+    font-weight: 600;
 }
 .history {
     font-family: "Vollkorn", sans-serif;
@@ -115,8 +126,6 @@
     font-family: "montserrat", sans-serif;
     text-decoration: underline;
 }
-
-
 
 .about {
     text-align:center;
@@ -142,17 +151,16 @@ text-decoration: underline;
 }
 
 .footer-nav {
+    position: sticky;
     text-align: center;
     height: 3rem;
     border-top: 2px solid #b28e5c;
-    margin-top: 3rem;
 }
 
 .nav-list li {
     display: inline;
-    height: 4rem;
-    padding-right: 1em;
-    font-size: 1.5em;
+    padding-right: 1rem;
+    font-size: 1.5rem;
     color: #b28e5c;
 }
 
