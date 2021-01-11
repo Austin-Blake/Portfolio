@@ -6,9 +6,8 @@
     font-weight: 400;
     line-height: 1.5rem;
 }
-html {
-    min-width: 360px;
-}
+
+
 body {
     min-height: 100vh;
 }
@@ -17,38 +16,165 @@ body {
     background-color: #85c7ca;
   }
 
-.nav-container {
-    display: inline-flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    width: 100%;
-    height: 4rem;
-    background-color: #85c7ca;
-    border-bottom: .1rem solid #b28e5c;
+.nav-bar {
+    overflow: hidden;
+    background-color: rgb(0, 0, 0);
+    border-bottom: 1px maroon solid;
 }
 
-.list li {
-    display: inline;
-    padding-right: 1em;
-    font-size: 1.5em;
-    color: #2d2d2d;
+.nav-bar a{
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
 }
 
-.list a {
-    cursor:pointer;
+.dropdown{
+    float: right;
+    overflow: hidden;
+    border: 3px maroon solid;
 }
 
-.list a li:hover {
-    color:white;
+.dropdown .dropbtn{
     font-size: 1.5rem;
+    font-weight: 500;
+    border:none;
+    outline: none;
+    color: maroon;
     text-decoration: underline;
+    padding: 1rem 3rem;
+    background-color: rgb(39, 38, 38);
+    margin: 0;
 }
-.banner h2{
+
+.nav-bar a:hover, .dropdown:hover .dropbtn{
+    background-color: red;
+}
+
+.dropdown-content {
+    visibility: hidden;
+    position: absolute;
+    color: maroon;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a{
+    float: none;
+    color: inherit;
+    padding: 12px 16px;
+    text-align: left;
+    display: block;
+}
+
+.dropdown-content a:hover{
+    background-color: whitesmoke;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+    visibility:visible;
+}
+
+@keyframes pulse {
+	0% {
+        
+		transform: scale(0.8);
+		opacity: 0.7;		
+	}
+	50% {
+        
+		transform: scale(1);
+		opacity: 1;	
+	}	
+	100% {
+        
+		transform: scale(0.8);
+		opacity: 0.7;	
+	}			
+}
+@keyframes slide {
+    0% {
+        transform:  translateX(500%);
+    }
+    50% {
+        transform: rotate(180deg);
+    }
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+.logo {
     position: relative;
-    top: 12rem;
-    left: 1rem;
-    font-size: 2rem;
+    top: 4rem;
+    width: 4rem;
+    height: 3.8rem;
+    margin-top: -5rem;
+    padding-top: -2rem;
+    animation: pulse 1.5s infinite;
+}
+
+
+@keyframes pullDown {
+	0% {
+		transform: scaleY(0.1);
+	}
+	40% {
+		transform: scaleY(1.02);
+	}
+	60% {
+		transform: scaleY(0.98);
+	}
+	80% {
+		transform: scaleY(1.01);
+	}
+	100% {
+		transform: scaleY(0.98);
+	}				
+	80% {
+		transform: scaleY(1.01);
+	}
+	100% {
+		transform: scaleY(1);
+	}							
+}
+
+
+
+.hero-title:hover {
+   
+  }
+  
+.hero-title{
+    position: relative;
+    top: 2rem;
+    width: 60%;
+    height: 70%;
+    animation-name: pullDown;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    transform-origin: 50% 0%;*/
+    
+}
+.hero {
+    background-color: black;
+    width: 100vw;
+    height: 100vh;
+
+}
+
+.banner h2{
+    display: block;
+    position: relative;
+    top: 7rem;
+    text-align: center;
+    font-size: 8vw;
+    font-weight: 700;
+    line-height: 8vh;
+    font-family: monospace;
+    -webkit-text-stroke-width: .7px;
+  -webkit-text-stroke-color: #85c7ca;
+  margin-top: -3rem;
 }
 
 .banner-img {
@@ -88,10 +214,14 @@ body {
     padding: 1rem;
     border-top: .1rem solid #b28e5c;
 }
+.opacity {
+    background-color: rgba(44, 00, 00, .2);
+    
+}
 
 .skills li {
-    list-style: disc;
-    font-weight: 400;
+    list-style: square;
+    font-weight: 700;
     color:#454545;
 }
 
@@ -108,8 +238,10 @@ body {
     box-shadow: 8px 5px 5px #484848 ;
     background-image: url('docs/hugo-barbosa-TnG2q8FtXsg-unsplash.jpg');
     background-size:contain;
+    background-position: bottom;
     background-repeat: no-repeat;
     background-color: rgb(218, 218, 218);
+    
 }
 hr {
     color: white;

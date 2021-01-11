@@ -14,28 +14,35 @@
         <link rel="stylesheet" href="reset.css" type="text/css">
     </head>
     <body>
-        <div class="nav-container">
-            <nav class="nav">
-            <ul class="list">
-                <li class="mission"><a href="#">Home</a></li>
-                <li class="home"><a href="#projects">Projects</a></li>
-                <li class="about"><a href="#staff">About</a></li>
-            </ul>
+        <img id='art' class='logo' src="docs\Asset 6@3x.png">
+        <div class="nav-bar">
+            <nav class="dropdown">
+            <button id='btn' class="dropbtn">Menu
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a class="mission" href="#">Home</a>
+                <a class="home" href="#projects">Projects</a>
+                <a class="about" href="#staff">About</a>
+            </div>
             </nav>
         </div>
-    
+
         <header class="header">
-            <h1 class="main-title">Welcome to the Front End!</h1>
+            <div class="hero">
+            <img id='welcome' src='docs/1Asset 5@3x.png' class="hero-title">
+            </div>
             <p class="secondary-title"><em>FrontEnd WebDeveloper</em></p>
         </header>
     
         <div class="banner_container">
             <div class="banner">
-                <h2>Making Your Designs Come To Life!</h2>
-            <img class="banner-img" src="docs/domenico-loia-EhTcC9sYXsw-unsplash.jpg" alt="Media not supported">
+                <h2 id="phrase">Making Your Designs Come To Life!</h2>
+            <img id='img'class="banner-img" src="docs/domenico-loia-EhTcC9sYXsw-unsplash.jpg" alt="Media not supported">
             </div>
         </div>
         <main class="main">
+            <div class="opacity">
             <section class="skills">
                 <h3>Current Skill Set Includes</h3>
                 <br>
@@ -56,7 +63,8 @@
                     <li>Responsive styling</li>
                     <li>Accessibility</li>
                 </ul>
-            </section>        
+            </section>
+            </div>       
             <section class="history">
                 <article id="staff" class="about">
                     <h2>WHO AM I?</h2>
@@ -86,7 +94,8 @@
                 <li class="about"><a href="#staff">About</a></li>
             </ul>
         </nav>
-    </footer>        
+    </footer> 
+    <script type=text/javascript src="app.js"></script>       
     </body>    
 </html>
 
