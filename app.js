@@ -1,21 +1,24 @@
-let frontEnd = document.getElementById('welcome');
-quote.style.visibility = 'hidden';
-let image = document.getElementById('img')
-let arr = [];
 
 let menu = document.getElementById('btn');
 let logo = document.getElementById('art');
+let drop = document.getElementById('content');
+var isAnimating = false;
 
-function logoMotion(evt){
-    evt.target.classList.add('slide 3s');
-}
-
-menu.addEventListener('click', logoMotion);
-
-
-
-//frontEnd.addEventListener('mouseover', changeSize);
-
+menu.addEventListener('click', function(evt) {
+    if (isAnimating) {
+      drop.style.display = 'none';
+      logo.classList.remove('animate');
+      logo.classList.add('pulse');
+      menu.innerHTML = 'Welcome';
+    } else {
+      drop.style.display = 'block';
+      logo.classList.remove('pulse');
+      logo.classList.add('animate');
+      menu.innerHTML = 'Menu';
+    }
+  
+    isAnimating = !isAnimating;
+  });
 
 
 
