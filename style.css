@@ -9,6 +9,7 @@
 
 
 body {
+    background-color: black;
     min-height: 100vh;
 }
 #page-container {
@@ -37,7 +38,7 @@ body {
     font-size: 1.5rem;
     font-weight: 500;
     border:none;
-    outline: none;
+    outline:none;
     color: maroon;
     text-decoration: underline;
     padding: 1rem 2rem;
@@ -50,63 +51,37 @@ body {
 }
 
 .dropdown-content {
+    z-index: 1;
+    height:min-content;
     font-size: 1.5rem;
     visibility: hidden;
     position: absolute;
     color: whitesmoke;
     min-width: 160px;
-    margin-right: 1rem;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.3);
-    z-index: 99;
-    background-color: rgba(106, 105, 105, 0.544);
+    background-color: rgba(199, 199, 199, 0.537);
 }
 
 .dropdown-content a{
-    float: none;
     color: inherit;
-    padding: 12px 16px;
+    padding: 1.5rem;
     text-align: left;
     display: block;
+    border: 1px black solid;
 }
 
 .dropdown-content a:hover{
-    background-color: rgb(255, 185, 55);
+    background-color: rgba(54, 54, 54, 0.673);
 }
 
 .dropdown .dropdown-content {
     display: none;
     visibility: visible;
+    border-radius: 0px 15px 15px 15px;
     
 }
 
-@keyframes pulse {
-	0% {
-        
-		transform: scale(0.8);
-		opacity: 0.7;		
-	}
-	50% {
-        
-		transform: scale(1);
-		opacity: 1;	
-	}	
-	100% {
-        
-		transform: scale(0.8);
-		opacity: 0.7;	
-	}			
-}
-@keyframes slide {
-    0% {
-        transform:  translateX(500%);
-    }
-    50% {
-        transform: rotate(180deg);
-    }
-    100% {
-        transform: translateX(0%);
-    }
-}
+
 .animate {
     animation: slide 5s infinite;
 }
@@ -118,74 +93,43 @@ body {
 .logo {
     position: relative;
     top: 4rem;
-    width: 4rem;
-    height: 3.8rem;
-    margin-top: -5rem;
-    padding-top: -2rem;
+    width: 5rem;
+    height: 5rem;
+    margin-top: -4rem;
+    padding-top: -1rem;
     
 }
-
-
-@keyframes pullDown {
-	0% {
-		transform: scaleY(0.1);
-	}
-	40% {
-		transform: scaleY(1.02);
-	}
-	60% {
-		transform: scaleY(0.98);
-	}
-	80% {
-		transform: scaleY(1.01);
-	}
-	100% {
-		transform: scaleY(0.98);
-	}				
-	80% {
-		transform: scaleY(1.01);
-	}
-	100% {
-		transform: scaleY(1);
-	}							
-}
-
-
-
-.hero-title:hover {
-   
-  }
   
 .hero-title{
     position: relative;
-    top: 2rem;
-    width: 60%;
+    top: .5rem;
+    width: 70%;
     height: 70%;
-    animation-name: pullDown;
-    animation-duration: 1s;
-    animation-timing-function: ease-out;
-    transform-origin: 50% 0%;*/
+    animation: pullDown 3s ease-out;
+    transform-origin: top;
     
 }
-.hero {
-    background-color: black;
+.header{
+    background-image: url('docs/sebastian-bednarek-OxC3gdWzB-8-unsplash.jpg');
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
     width: 100vw;
-    height: 100vh;
-
+    height: 90vh;
+    text-align: center;
+    color: #b28e5c;
 }
 
-.banner h2{
-    display: block;
-    position: relative;
-    top: 7rem;
-    text-align: center;
-    font-size: 8vw;
-    font-weight: 700;
-    line-height: 8vh;
-    font-family: monospace;
-    -webkit-text-stroke-width: .7px;
-  -webkit-text-stroke-color: #85c7ca;
-  margin-top: -3rem;
+.hero {
+    background-color: rgba(0, 0, 0, 0.387);
+    height: 100%;
+}
+
+.banner-container{
+    border-top: 1rem white solid;
+    border-bottom: 1rem white solid;
+    background-color: rgba(0, 0, 0, 0.387);
+    height: 100%;
 }
 
 .banner-img {
@@ -193,20 +137,11 @@ body {
     border: 1px black solid;    
 }
 
-.header {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    max-width: 100%;
-    background-color: #ffffff;
-    color: #b28e5c;
-}
-
 .main {
     min-height: 100vh;
     display: grid;
     grid-template-columns: 10rem 1fr;
-    background-color: #85c7ca;
+    background-color: #000000;
 }
 
 .main-title {
@@ -218,16 +153,15 @@ body {
 }
 
 .secondary-title {
+    position: relative;
+    bottom: 6rem;
     display: inline-block;
-    font-size: 1.5rem;
+    font-size: 3rem;
+    line-height: 2.3rem;
     font-family: "Vollkorn",sans-serif;
     margin: auto;
     padding: 1rem;
     border-top: .1rem solid #b28e5c;
-}
-.opacity {
-    background-color: rgba(44, 00, 00, .2);
-    
 }
 
 .skills li {
@@ -252,8 +186,8 @@ body {
     background-position: bottom;
     background-repeat: no-repeat;
     background-color: rgb(218, 218, 218);
-    
 }
+
 hr {
     color: white;
     }
@@ -264,11 +198,11 @@ hr {
     font-weight: 600;
     border:3px white solid;
     padding: .2rem;
-
 }
+
 .history {
     font-family: "Vollkorn", sans-serif;
-    color: #2c2c2c;
+    color: #ffffff8b;
     padding-right: .7rem;
     padding-bottom: 2rem;
 }
@@ -280,11 +214,11 @@ hr {
     flex-wrap: wrap;
 }
 .moto-website {
-    box-shadow: 10px 10px 5px rgb(62, 62, 62);
+    box-shadow: 10px 10px 5px rgb(61, 61, 61);
     padding: .2rem;
     border: 1px #315158 solid;
     border-radius: 8%;
-    background-color: #ffffff;
+    background-color: #ffffffa3;
     height: 9rem;
     margin-bottom: 1rem;
 }
@@ -300,7 +234,7 @@ hr {
     text-decoration: underline;
 }
 
-.about {
+#info {
     text-align:center;
     width: 100%;
     margin-top: 1rem;
@@ -341,3 +275,58 @@ text-decoration: underline;
     color: #b28e5c;
 }
 
+@keyframes pullDown {
+	0% {
+		transform: scaleY(0.1);
+	}
+	40% {
+		transform: scaleY(1.02);
+	}
+	60% {
+		transform: scaleY(0.98);
+	}
+	80% {
+		transform: scaleY(1.01);
+	}
+	100% {
+		transform: scaleY(0.98);
+	}				
+	80% {
+		transform: scaleY(1.01);
+	}
+	100% {
+		transform: scaleY(1);
+	}							
+}
+@keyframes pulse {
+	0% {
+        
+		transform: scale(0.8);
+		opacity: 0.7;		
+	}
+	50% {
+        
+		transform: scale(1);
+		opacity: 1;	
+	}	
+	100% {
+        
+		transform: scale(0.8);
+		opacity: 0.7;	
+	}			
+}
+@keyframes slide {
+    0% {
+        transform:  translateX(70vw);
+    }
+    50% {
+        transform: rotate(180deg);
+        transform: translateX(0%);
+    }
+    55% {
+         
+    }
+    100% {
+        transform: translateX(70vw);
+    }
+}

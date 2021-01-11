@@ -9,12 +9,12 @@ menu.addEventListener('click', function(evt) {
       drop.style.display = 'none';
       logo.classList.remove('animate');
       logo.classList.add('pulse');
-      menu.innerHTML = 'Welcome';
+      menu.innerHTML = 'Menu';
     } else {
       drop.style.display = 'block';
       logo.classList.remove('pulse');
       logo.classList.add('animate');
-      menu.innerHTML = 'Menu';
+      menu.innerHTML = 'Welcome';
     }
   
     isAnimating = !isAnimating;
