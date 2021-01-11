@@ -123,6 +123,7 @@ body {
 .hero {
     background-color: rgba(0, 0, 0, 0.387);
     height: 100%;
+    width: 100%;
 }
 
 .banner-container{
@@ -141,7 +142,8 @@ body {
     min-height: 100vh;
     display: grid;
     grid-template-columns: 10rem 1fr;
-    background-color: #000000;
+     background: rgb(48,48,51);
+background: linear-gradient(35deg, rgba(48,48,51,1) 0%, rgba(154,85,85,1) 54%, rgba(106,109,112,1) 100%); 
 }
 
 .main-title {
@@ -227,6 +229,10 @@ hr {
     padding: .3rem;
 }
 
+.about {
+    background-image:linear-gradient();
+}
+
 .about h2 {
     font-size: 2rem;
     line-height: 1em;
@@ -242,12 +248,12 @@ hr {
 }
 
 .about h3 {
-font-size: 1rem;
-font-weight: 500;
-line-height: 1em;
-padding-bottom: .5rem;
-text-align: center;
-text-decoration: underline;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1em;
+    padding-bottom: .5rem;
+    text-align: center;
+    text-decoration: underline;
 }
 
 .about :nth-child(3) {
@@ -258,18 +264,20 @@ text-decoration: underline;
     padding-top: 1em;
 }
 
-.footer-nav {
-    display:flex;
+.footer {
+    display: flex;
     flex-direction: row;
     justify-content: center;
     align-items:center;
-    height: 3rem;
-    border-top: 2px solid #000000;
-    overflow: hidden;
+    height: 5rem;
+    border-top: 2px solid #b28e5c;
 }
 
-.nav-list li {
-    display: inline;
+.footer-nav li{
+    display: inline;    
+}
+
+.nav-list li a {
     padding-right: 1rem;
     font-size: 1.5rem;
     color: #b28e5c;
@@ -321,10 +329,10 @@ text-decoration: underline;
     }
     50% {
         transform: rotate(180deg);
-        transform: translateX(0%);
+        
     }
     55% {
-         
+        transform: translateX(0%);
     }
     100% {
         transform: translateX(70vw);
