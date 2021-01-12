@@ -127,23 +127,27 @@ body {
 }
 
 .banner-container{
+    background-image: url('docs/gilly-JMCaiVNs3VQ-unsplash.jpg');
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
     border-top: 1rem white solid;
     border-bottom: 1rem white solid;
     background-color: rgba(0, 0, 0, 0.387);
-    height: 100%;
+    height: 100vh;
 }
 
 .banner-img {
+    height: 50%;
     width: 100%;
     border: 1px black solid;    
 }
 
 .main {
     min-height: 100vh;
-    display: grid;
-    grid-template-columns: 10rem 1fr;
-     background: rgb(48,48,51);
-background: linear-gradient(35deg, rgba(48,48,51,1) 0%, rgba(154,85,85,1) 54%, rgba(106,109,112,1) 100%); 
+    padding: 3rem 0rem;
+    background: rgb(48,48,51);
+    background: linear-gradient(35deg, rgba(48,48,51,1) 0%, rgba(154,85,85,1) 54%, rgba(106,109,112,1) 100%); 
 }
 
 .main-title {
@@ -166,28 +170,37 @@ background: linear-gradient(35deg, rgba(48,48,51,1) 0%, rgba(154,85,85,1) 54%, r
     border-top: .1rem solid #b28e5c;
 }
 
+.opacity{
+    margin:0rem auto;
+    background-image: url('docs/nasa-Q1p7bh3SHj8-unsplash.jpg');
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    max-width: 80%;
+    height: 80vh;
+    border-radius: 10%;
+}
+
+.skills ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 4rem;
+}
 .skills li {
-    list-style: square;
+    font-size: 2rem;
+    padding: 1rem;
     font-weight: 700;
-    color:#454545;
+    color:#ffffff;
 }
 
 .skills {
-    color:#454545;
-    text-align: left;
-    display: block;
-    max-width: 8rem;
-    max-height: 31rem;
-    padding: 1.2rem;
-    margin: 1rem .2rem 1rem 1rem;
-    border: solid .1px #cac5c5;
-    border-radius: 1rem;
-    box-shadow: 8px 5px 5px #484848 ;
-    background-image: url('docs/hugo-barbosa-TnG2q8FtXsg-unsplash.jpg');
-    background-size:contain;
-    background-position: bottom;
-    background-repeat: no-repeat;
-    background-color: rgb(218, 218, 218);
+
+    height: 80vh;
+    border-radius: 10%;
+    background-color: rgba(0, 0, 0, 0.585);
+    box-shadow: 10px 10px 5px rgb(61, 61, 61);
 }
 
 hr {
@@ -195,16 +208,18 @@ hr {
     }
 
 .skills h3 {
-    position:relative;
-    bottom: 1rem;
+    text-align: center;
+    font-size: 4rem;
+    padding: 3rem;
     font-weight: 600;
-    border:3px white solid;
-    padding: .2rem;
+    color: white;
 }
 
 .history {
     font-family: "Vollkorn", sans-serif;
     color: #ffffff8b;
+    margin: 3rem auto;
+    width: 50rem;
     padding-right: .7rem;
     padding-bottom: 2rem;
 }
@@ -243,7 +258,6 @@ hr {
 #info {
     text-align:center;
     width: 100%;
-    margin-top: 1rem;
     padding-bottom: 4rem;
 }
 
