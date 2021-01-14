@@ -19,4 +19,5 @@ menu.addEventListener('click', function(evt) {
     }
   
     isAnimating = !isAnimating;
-  });
+});
+  
