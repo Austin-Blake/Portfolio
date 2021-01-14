@@ -42,10 +42,12 @@ body {
     float: right;
     margin: .2rem;
     box-shadow: 5px 10px 5px rgb(32, 72, 62);
+    font-family: 'Cinzel';
     
 }
 
 .dropdown .dropbtn{
+    font-family: 'Cinzel';
     font-size: 1.5rem;
     font-weight: 500;
     border:1px black solid;
@@ -62,6 +64,7 @@ body {
 
 
 .dropdown-content {
+    font-family: 'Cinzel';
     height:min-content;
     font-size: 1.9rem;
     visibility: hidden;

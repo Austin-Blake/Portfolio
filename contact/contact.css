@@ -110,9 +110,19 @@ body {
     background-color: rgb(30, 50, 61);
 }
 
+.img{
+    width: 80vw;
+    height: 70vh;
+    background-image: url('../docs/james-wheeler-ZLygSfE2wtk-unsplash.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    box-shadow: 40px 20px 10px rgb(27, 27, 27);
+}
+
 form{
     display:flex;
-    flex-shrink: 2;
     font-size: 1.6rem;
     width: 80vw;
     height: 70vh;
@@ -120,13 +130,8 @@ form{
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
-    border: .5rem black solid;
-    box-shadow: 40px 20px 10px rgb(27, 27, 27);
-    background-image: url('../docs/nasa-Q1p7bh3SHj8-unsplash.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    overflow: hidden;
+    border: .2rem black solid;
+    background-color: rgba(0, 0, 0, 0.449);
     color:white;
     text-align: center;
 }
@@ -135,6 +140,7 @@ input, textarea{
     width: 50%;
     font-size: 1.2rem;
     margin:auto;
+    text-align: center;
     background-color: rgb(22, 81, 101);
 }
 
