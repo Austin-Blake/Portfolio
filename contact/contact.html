@@ -3,27 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="html" href="../HomePage\index.html" type="text">
+    <link rel="html" href="../HomePage/index.html" type="text">
+    <link rel="stylesheet" href="../contact/contact.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
     <title>Contact</title>
 </head>
-<body id="contact">
-    <form action="mailto:austin.hall@gmail.com" method="POST">
-        <label for="text">First Name:</label>
-        <input id="first" name="first" type="text" minlength="3" maxlength="100" pattern="\w+[a-zA-Z]" placeholder="John" required>
-        <br><br>
-        <label for="text">Last Name:</label>
-        <input id="last" name="last" type="text" minlength="3" maxlength="100" pattern="\w+[a-zA-Z]" placeholder="Doe" required>
-        <br><br>
-        <label for="text">Email:</label>
-        <input for="email" id="email" name="email" type="text" required min="3" max="100" placeholder="user@example.gov" pattern="^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)">
-        <br><br>
-        <section class="text-area">
-            <label for="information-text">Comment or Message</label>
-            <br>
-            <textarea id="text-block" name="text-block" rows="10" cols="40" required></textarea>
-        </section>
-        <input type="submit" value="submit">
-    </form>
-    
+<body id="contact-form">
+    <div class="nav-bar">
+        <img role="img" aria-label="Diamond graphic logo" id='art' class='logo' src="../docs/Asset 4@3x.png">
+        <nav id="ddown" class="dropdown">
+            <button id='btn' class="dropbtn"><a>Menu ▼</a>
+            </button>
+            <div id="content" class="dropdown-content">
+                <a class="mission-nav" href="../HomePage/index.html">Home</a>
+                <a class="home-nav" href="../HomePage/index.html#projects">Projects</a>
+                <a class="about-nav" href="../HomePage/index.html#about">About</a>
+                <a class='contact-nav' href="../contact/contact.html">Contact</a>
+            </div>
+        </nav>
+    </div >
+    <div class='form-container'>
+        <form action="mailto:austin.hall@gmail.com" method="POST">
+            <label for="text">First Name:</label>
+            <input id="first" name="first" type="text" minlength="3" maxlength="100" pattern="\w+[a-zA-Z]" placeholder="John" required>
+                <br><br>
+            <label for="text">Last Name:</label>
+            <input id="last" name="last" type="text" minlength="3" maxlength="100" pattern="\w+[a-zA-Z]" placeholder="Doe" required>
+                <br><br>
+            <label for="text">Email:</label>
+            <input for="email" id="email" name="email" type="text" required min="3" max="100" placeholder="user@example.gov" pattern="^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)">
+                <br>
+            <section class="text-area">
+                <label for="information-text">Comment or Message</label>
+                <br>
+                <textarea id="text-block" name="text-block" rows="3" cols="30" required></textarea>
+            </section>
+            <input id='submit' type="submit" value="submit">
+        </form>
+    </div>
+    <footer class="footer">
+        <nav class="footer-nav">
+            <p>♥ Proudly Built in Cincinnati OH</p>
+        </nav>
+    </footer>
+    <script type="text/javascript" src="../contact/contact.js"></script>
 </body>
 </html>

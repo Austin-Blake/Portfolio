@@ -150,9 +150,10 @@ body {
 .secondary-title {
     text-align: center;
     width: 100%;
-    font-size: 2.7rem;
-    line-height: 2rem;
+    font-size: 6vmax;
+    line-height: 3rem;
     font-family: 'Cinzel';
+    padding: 1rem;
     position: relative;
     top: 7rem;
     right: 1rem;
@@ -238,7 +239,8 @@ body {
 .about-container {
     margin: 2rem;
     width: 80%;
-    height: 50vh;
+    height: min-content;
+    min-height: 40vh;
     display:flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -249,12 +251,14 @@ body {
     background-repeat: no-repeat;
     border: .5rem black solid;
     box-shadow: 20px 10px 15px rgb(44, 43, 43);
-    overflow: hidden;
+    
 }
 
 .about {
+    margin: auto;
     text-align: center;
-    height: 50vh;
+    height: min-content;
+    min-height: 40vh;
     width: 100%;
     color: whitesmoke;
     font-size: 1.2rem;
@@ -266,9 +270,11 @@ body {
     font-size: 2rem;
     font-family: "montserrat", sans-serif;
     color:rgb(253, 167, 6);
+    margin: auto;
 }
 
 .about h3 {
+    margin: auto;
     font-size: 2rem;
     line-height: 1em;
     color:rgb(253, 167, 6);
