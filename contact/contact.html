@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="html" href="../HomePage\index.html" type="text">
+    <title>Contact</title>
+</head>
+<body id="contact">
+    <form action="mailto:austin.hall@gmail.com" method="POST">
+        <label for="text">First Name:</label>
+        <input id="first" name="first" type="text" minlength="3" maxlength="100" pattern="\w+[a-zA-Z]" placeholder="John" required>
+        <br><br>
+        <label for="text">Last Name:</label>
+        <input id="last" name="last" type="text" minlength="3" maxlength="100" pattern="\w+[a-zA-Z]" placeholder="Doe" required>
+        <br><br>
+        <label for="text">Email:</label>
+        <input for="email" id="email" name="email" type="text" required min="3" max="100" placeholder="user@example.gov" pattern="^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)">
+        <br><br>
+        <section class="text-area">
+            <label for="information-text">Comment or Message</label>
+            <br>
+            <textarea id="text-block" name="text-block" rows="10" cols="40" required></textarea>
+        </section>
+        <input type="submit" value="submit">
+    </form>
+    
+</body>
+</html>
