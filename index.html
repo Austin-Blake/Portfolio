@@ -12,84 +12,88 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="style.css" type="text/css">
         <link rel="stylesheet" href="reset.css" type="text/css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Vollkorn&display=swap" rel="stylesheet">  
     </head>
     <body>
-        <img id='art' class='logo' src="docs\Asset 6@3x.png">
+        
         <div class="nav-bar">
+            <img role="img" aria-label="Diamond graphic logo" id='art' class='logo' src="docs\Asset 4@3x.png">
             <nav id="ddown" class="dropdown">
-            <button id='btn' class="dropbtn">Menu
-                <i class="fa fa-caret-down"></i>
-            </button>
-            <div id="content" class="dropdown-content">
-                <a class="mission" href="#">Home</a>
-                <a class="home" href="#projects">Projects</a>
-                <a class="about" href="#staff">About</a>
-                <a class='contact' href="#contact">Contact</a>
-            </div>
+                <button id='btn' class="dropbtn"><a>Menu ▼</a>
+                </button>
+                <div id="content" class="dropdown-content">
+                    <a class="mission-nav" href="#">Home</a>
+                    <a class="home-nav" href="#projects">Projects</a>
+                    <a class="about-nav" href="#staff">About</a>
+                    <a class='contact-nav' href="#contact">Contact</a>
+                </div>
             </nav>
         </div>
-
         <header class="header">
             <div class="hero">
-            <img id='welcome' src='docs/1Asset 5@3x.png' class="hero-title">
+            <img role="img" aria-label="Welcome to the Front End" id='welcome' src='docs/1Asset 5@3x.png' class="hero-title">
             </div>
-            <p class="secondary-title"><em>FrontEnd WebDeveloper</em></p>
         </header>
     
         <div class="banner-container">
             <div class="banner">
-                <img id='img'class="banner-img" src="" alt="Media not supported">
+                <h1 class="secondary-title"><em>FrontEnd WebDeveloper</em></h1>
             </div>
         </div>
         <main class="main">
-            <div class="opacity">
+            <div class="skill-container">
             <section class="skills">
-                <h3>Current Skill Set Includes</h3>
+            <h3>Current Skill Set Includes</h3>
                 <ul>
                     <li>HTML5</li>
                     <li>CSS3</li>
                     <li>JavaScript</li>
                     <li>Node JS </li>
+                    <li>React</li>
+                    <li>Redux</li>
                     <li>GitHub</li>
                     <li>PhotoShop</li>
                     <li>Illustrator</li>
                     <li>LightRoom</li>
                 </ul>
+            </section>
+            </div> 
+            <div class="knowledge-container">
+                <div class="knowledge">
+                <h3>Fundamental Knowledge</h3>
                 <ul>
+                    <li>TDD</li>
+                    <li>Validation</li>
                     <li>ES6 Semantics</li>
                     <li>Responsive Styling</li>
                     <li>Accessibility Practices</li>
                 </ul>
+                </div>
+            </div>
             </section>
-            </div>       
-            <section class="history">
-                <article id="info" class="about">
+            <section class="about-container">
+                <article class="about">
                     <h2>WHO AM I?</h2>
                         <br>
                         <p>My name is Blake, I am a developer located just outside of Cincinnati Ohio.</p>
                     <h3>My History</h3>
-                        <p>I began my journey in 2020, during the infamous CoronaTimes. My roots are based in
-                        photography with some graphic design splashed in.</p>
                         <p>My education is in construction management. I served in the US Armed Forces (Airspace management / network systems), City Police Officer, and now finally
                         found my place working as a Web/UI Developer.
                         </p>
                 </article>
+            </section>
                 <article id="projects" class="images">
                     <a href="https://fullframemoto.netlify.app/"><img class="moto-website" src="docs/Jug-Logo-Png24.png" alt="Media not supported"></a>
                     <a href="https://fullframemoto.netlify.app/"><img class="moto-website" src="docs/Jug-Logo-Png24.png" alt="Media not supported"></a>
                     <a href="https://fullframemoto.netlify.app/"><img class="moto-website" src="docs/Jug-Logo-Png24.png" alt="Media not supported"></a>
-                    <a href="https://fullframemoto.netlify.app/"><img class="moto-website" src="docs/Jug-Logo-Png24.png" alt="Media not supported"></a>
-                    <a href="https://fullframemoto.netlify.app/"><img class="moto-website" src="docs/Jug-Logo-Png24.png" alt="Media not supported"></a>
-                </article>
-            </section>
+                </article> 
         </main>           
     <footer class="footer">
         <nav class="footer-nav">
-            <ul class="nav-list">
-                <li class="mission"><a href="#">Top</a></li>
-                <li class="home"><a href="#projects">Projects</a></li>
-                <li class="about"><a href="#staff">About</a></li>
-            </ul>
+            <p>♥ Proudly Built in Cincinnati OH</p>
         </nav>
     </footer> 
     <script type=text/javascript src="app.js"></script>       

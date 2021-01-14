@@ -2,25 +2,32 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: "Montserrat";
     font-weight: 400;
     line-height: 1.5rem;
 }
-
-
-body {
-    background-color: black;
-    min-height: 100vh;
-}
-#page-container {
-    max-height: 100%;
-    background-color: #85c7ca;
+/* latin */
+@font-face {
+    font-family: 'Cinzel';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/cinzel/v10/8vIU7ww63mVu7gtR-kwKxNvkNOjw-tbnfYPlDX5Z.woff2) format('woff2');
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
   }
 
+body {
+    min-width: 335px;
+    font-family: "Vollhorn";
+}
 .nav-bar {
-    overflow: hidden;
-    background-color: rgb(0, 0, 0);
-    border-bottom: 1px maroon solid;
+    position: sticky;
+    top:0;
+    z-index: 3;
+    width: 100%;
+    height: 5rem;
+    padding: 2rem;
+    background-color: rgb(105, 138, 125);
+    border-bottom: 5px rgb(218, 211, 211) solid;
 }
 
 .nav-bar a{
@@ -29,37 +36,40 @@ body {
 }
 
 .dropdown{
+    position: relative;
+    bottom: 1rem;
+    left: 1.3rem;
     float: right;
-    overflow: hidden;
-    border: 3px maroon solid;
+    margin: .2rem;
+    box-shadow: 5px 10px 5px rgb(32, 72, 62);
+    
 }
 
 .dropdown .dropbtn{
     font-size: 1.5rem;
     font-weight: 500;
-    border:none;
-    outline:none;
-    color: maroon;
+    border:1px black solid;
+    color: black;
     text-decoration: underline;
-    padding: 1rem 2rem;
-    background-color: rgb(39, 38, 38);
+    padding: .4rem 2rem;
+    background-color: rgb(74, 120, 109);
     margin: 0;
 }
 
 .nav-bar a:hover, .dropdown:hover .dropbtn{
-    background-color: red;
+    background-color: rgb(64, 81, 79);
 }
 
+
 .dropdown-content {
-    z-index: 1;
     height:min-content;
-    font-size: 1.5rem;
+    font-size: 1.9rem;
     visibility: hidden;
     position: absolute;
-    color: whitesmoke;
+    color: rgb(255, 255, 255);
     min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.3);
-    background-color: rgba(199, 199, 199, 0.537);
+    background: rgb(12,4,2);
+    background: linear-gradient(49deg, rgba(39, 36, 36, 0.877) 9%, rgba(86, 164, 146, 0.353) 47%, rgba(5, 1, 1, 0.503) 100%);
 }
 
 .dropdown-content a{
@@ -77,10 +87,8 @@ body {
 .dropdown .dropdown-content {
     display: none;
     visibility: visible;
-    border-radius: 0px 15px 15px 15px;
-    
+    border-radius: 0px 0px 15px 15px;
 }
-
 
 .animate {
     animation: slide 5s infinite;
@@ -92,22 +100,18 @@ body {
 
 .logo {
     position: relative;
-    top: 4rem;
-    width: 5rem;
-    height: 5rem;
+    top: 2rem;
+    width: 6rem;
+    height: 6rem;
     margin-top: -4rem;
     padding-top: -1rem;
-    
 }
   
 .hero-title{
     position: relative;
-    top: .5rem;
+    top: 1rem;
     width: 70%;
-    height: 70%;
-    animation: pullDown 3s ease-out;
-    transform-origin: top;
-    
+    height: 60%;    
 }
 .header{
     background-image: url('docs/sebastian-bednarek-OxC3gdWzB-8-unsplash.jpg');
@@ -115,7 +119,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     width: 100vw;
-    height: 90vh;
+    height: 50vh;
     text-align: center;
     color: #b28e5c;
 }
@@ -131,54 +135,58 @@ body {
     background-position: bottom;
     background-repeat: no-repeat;
     background-size: cover;
-    border-top: 1rem white solid;
-    border-bottom: 1rem white solid;
-    background-color: rgba(0, 0, 0, 0.387);
-    height: 100vh;
+    border-top: 1rem rgb(226, 218, 218) solid;
+    border-bottom: 1rem rgb(226, 218, 218) solid;
+    background-color: rgba(0, 0, 0, 0.258);
+    height: 50vh;
 }
 
 .banner-img {
-    height: 50%;
+    height: 30%;
     width: 100%;
     border: 1px black solid;    
 }
 
-.main {
-    min-height: 100vh;
-    padding: 3rem 0rem;
-    background: rgb(48,48,51);
-    background: linear-gradient(35deg, rgba(48,48,51,1) 0%, rgba(154,85,85,1) 54%, rgba(106,109,112,1) 100%); 
-}
-
-.main-title {
-    display: inline-block;
-    font-size: 3rem;
-    font-family: "Cinzel",sans-serif;
-    line-height: 3rem;
-    padding: 1rem;
-}
-
 .secondary-title {
+    text-align: center;
+    width: 100%;
+    font-size: 2.7rem;
+    line-height: 2rem;
+    font-family: 'Cinzel';
     position: relative;
-    bottom: 6rem;
-    display: inline-block;
-    font-size: 3rem;
-    line-height: 2.3rem;
-    font-family: "Vollkorn",sans-serif;
-    margin: auto;
-    padding: 1rem;
-    border-top: .1rem solid #b28e5c;
+    top: 7rem;
+    right: 1rem;
+    color:whitesmoke;
 }
 
-.opacity{
-    margin:0rem auto;
-    background-image: url('docs/nasa-Q1p7bh3SHj8-unsplash.jpg');
+.main {
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    background-color: rgb(226, 218, 218);
+}
+
+.skill-container{
+    font-family: 'Cinzel';
+    margin: 3rem auto;
+    height: min-content;
+    width: 80vw;
+    background-image: url('docs/andrik-langfield-1-YQiOijio8-unsplash.jpg');
     background-size:cover;
     background-position: center;
     background-repeat: no-repeat;
-    max-width: 80%;
-    height: 80vh;
-    border-radius: 10%;
+    border-radius: 40%;
+}
+
+.skills h3 {
+    text-align: center;
+    font-size: 2.2rem;
+    line-height: 2.5rem;
+    padding-top: 1rem;
+    font-weight: 600;
+    color: rgb(226, 218, 218);
 }
 
 .skills ul{
@@ -186,88 +194,85 @@ body {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    padding: 4rem;
+    padding: 1rem;
 }
 .skills li {
-    font-size: 2rem;
+    font-size: 1.7rem;
     padding: 1rem;
     font-weight: 700;
-    color:#ffffff;
+    color:rgb(226, 218, 218);
 }
 
 .skills {
-
-    height: 80vh;
-    border-radius: 10%;
-    background-color: rgba(0, 0, 0, 0.585);
-    box-shadow: 10px 10px 5px rgb(61, 61, 61);
-}
-
-hr {
-    color: white;
-    }
-
-.skills h3 {
-    text-align: center;
-    font-size: 4rem;
+    height: min-content;
+    width: 80vw;
+    border-radius: 40%;
     padding: 3rem;
-    font-weight: 600;
-    color: white;
+    background-color: rgba(23, 23, 23, 0.489);
+    box-shadow: 20px 10px 15px rgb(61, 61, 61);
 }
 
-.history {
-    font-family: "Vollkorn", sans-serif;
-    color: #ffffff8b;
-    margin: 3rem auto;
-    width: 50rem;
-    padding-right: .7rem;
-    padding-bottom: 2rem;
-}
-
-.images {
+.knowledge {
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+    flex-direction: column;
     flex-wrap: wrap;
-}
-.moto-website {
-    box-shadow: 10px 10px 5px rgb(61, 61, 61);
-    padding: .2rem;
-    border: 1px #315158 solid;
-    border-radius: 8%;
-    background-color: #ffffffa3;
-    height: 9rem;
-    margin-bottom: 1rem;
+    justify-content: center;
 }
 
-.images a:hover {
-    padding: .3rem;
+.knowledge h3 {
+    text-align: center;
+    margin-bottom: 1rem;
+    line-height: 2.5rem;
+    font-family: 'Cinzel';
+    font-weight: 400;
+    font-size: 2.8rem;
+    color: rgb(5, 5, 5);
+}
+
+.knowledge ul li {
+    display:flex;
+    justify-content: center;
+    font-size: 1.4rem;
+}
+
+.about-container {
+    margin: 2rem;
+    width: 80%;
+    height: 100%;
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-family: "Vollkorn", sans-serif;
+    background-image: url('docs/domenico-loia-EhTcC9sYXsw-unsplash.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: .5rem black solid;
+    box-shadow: 20px 10px 15px rgb(44, 43, 43);
+    overflow: hidden;
 }
 
 .about {
-    background-image:linear-gradient();
+    text-align: center;
+    width: 100%;
+    color: whitesmoke;
+    font-size: 1.2rem;
+    padding: 1rem;
+    background-color: rgba(0, 0, 0, 0.605);
 }
 
 .about h2 {
     font-size: 2rem;
-    line-height: 1em;
     font-family: "montserrat", sans-serif;
-    text-decoration: underline;
-}
-
-#info {
-    text-align:center;
-    width: 100%;
-    padding-bottom: 4rem;
+    color:rgb(201, 133, 7);
 }
 
 .about h3 {
-    font-size: 1rem;
-    font-weight: 500;
+    font-size: 2rem;
     line-height: 1em;
+    color:rgb(201, 133, 7);
     padding-bottom: .5rem;
     text-align: center;
-    text-decoration: underline;
 }
 
 .about :nth-child(3) {
@@ -277,49 +282,36 @@ hr {
 .about :nth-child(6){
     padding-top: 1em;
 }
-
-.footer {
+.images {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items:center;
-    height: 5rem;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.images a:hover {
+    padding: .3rem;
+}
+
+.moto-website {
+    box-shadow: 10px 10px 5px rgb(61, 61, 61);
+    border: 1px #315158 solid;
+    border-radius: 8%;
+    background-color: rgb(226, 218, 218);
+    height: 9rem;
+    margin: 2rem .2rem;
+}
+
+.footer {
+    text-align: center;
+    padding-top: 1rem;
+    height: 4rem;
+    font-family: 'Cinzel';
+    font-size: 1.5rem;
+    background-color: rgb(105, 138, 125);
     border-top: 2px solid #b28e5c;
 }
 
-.footer-nav li{
-    display: inline;    
-}
-
-.nav-list li a {
-    padding-right: 1rem;
-    font-size: 1.5rem;
-    color: #b28e5c;
-}
-
-@keyframes pullDown {
-	0% {
-		transform: scaleY(0.1);
-	}
-	40% {
-		transform: scaleY(1.02);
-	}
-	60% {
-		transform: scaleY(0.98);
-	}
-	80% {
-		transform: scaleY(1.01);
-	}
-	100% {
-		transform: scaleY(0.98);
-	}				
-	80% {
-		transform: scaleY(1.01);
-	}
-	100% {
-		transform: scaleY(1);
-	}							
-}
 @keyframes pulse {
 	0% {
         
@@ -339,7 +331,7 @@ hr {
 }
 @keyframes slide {
     0% {
-        transform:  translateX(70vw);
+        transform:  translateX(30vw);
     }
     50% {
         transform: rotate(180deg);
@@ -347,8 +339,9 @@ hr {
     }
     55% {
         transform: translateX(0%);
+        transform: rotate(380deg);
     }
     100% {
-        transform: translateX(70vw);
+        transform: translateX(30vw);
     }
 }
