@@ -113,7 +113,7 @@ body {
 .img{
     width: 80vw;
     height: 70vh;
-    background-image: url('../docs/james-wheeler-ZLygSfE2wtk-unsplash.jpg');
+    background-image: url('james-wheeler-ZLygSfE2wtk-unsplash.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
