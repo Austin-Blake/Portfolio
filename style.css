@@ -89,6 +89,7 @@ body {
 .dropdown .dropdown-content {
     display: none;
     visibility: visible;
+    border-radius: 0px 0px 15px 15px;
 }
 
 .animate {
@@ -118,7 +119,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     width: 100vw;
-    height: 50vh;
+    height: 80vh;
     text-align: center;
     color: #b28e5c;
 }
