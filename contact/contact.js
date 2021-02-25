@@ -8,13 +8,11 @@ var isAnimating = false;
 menu.addEventListener('click', function(evt) {
     if (isAnimating) {
       drop.style.display = 'none';
-      logo.classList.remove('animate');
-      logo.classList.add('pulse');
+      logo.classList.remove('pulse');
       menu.innerHTML = 'Menu ▼';
     } else {
       drop.style.display = 'block';
-      logo.classList.remove('pulse');
-      logo.classList.add('animate');
+      logo.classList.add('pulse');
       menu.innerHTML = 'Welcome';
     }
   

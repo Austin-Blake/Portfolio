@@ -52,3 +52,14 @@ let timeLine = () => {
 window.addEventListener('load', () => {
 	timeLine();
 });
+
+const hideMenu = () => {
+	anime({
+		targets: menu,
+		opacity: [0, 0, 1],
+		duration: 500,
+		endDelay: 1000
+	})
+};
+
+window.addEventListener('scroll', hideMenu);
