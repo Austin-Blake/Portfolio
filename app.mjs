@@ -1,6 +1,6 @@
 "use strict";
-import { default as anime } from "./node_modules/animejs/lib/anime.es.js";
-import { isInViewport } from "./helper.js";
+import anime from "./node_modules/animejs/lib/anime.es.js";
+
 /*eslint-env browser*/
 
 let menu = document.getElementById("btn");
