@@ -1,0 +1,23 @@
+{
+  "type": "module",
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "FrontEnd Portfolio",
+  "main": "./app.mjs",
+  "scripts": {
+    "test": "node app.mjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Austin-Blake/Portfolio.git"
+  },
+  "author": "Austin-Blake",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Austin-Blake/Portfolio/issues"
+  },
+  "homepage": "https://github.com/Austin-Blake/Portfolio#readme",
+  "dependencies": {
+    "animejs": "^3.2.1"
+  }
+}
