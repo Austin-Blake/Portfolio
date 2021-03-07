@@ -4,9 +4,10 @@ import anime from "./node_modules/animejs/lib/anime.es.js";
 /*eslint-env browser*/
 
 let menu = document.getElementById("btn");
+let dropDown = document.getElementsByClassName('dropdown');
 let logo = document.getElementById("art");
 let drop = document.getElementById("content");
-var isAnimating = false;
+let isAnimating = false;
 
 //added listener to menu to display on click 
 // if displayed click will hide.
@@ -55,7 +56,7 @@ window.addEventListener('load', () => {
 
 const hideMenu = () => {
 	anime({
-		targets: menu,
+		targets: [menu, dropDown],
 		opacity: [0, 0, 1],
 		duration: 500,
 		endDelay: 1000

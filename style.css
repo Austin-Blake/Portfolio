@@ -36,7 +36,7 @@ body {
 
 .dropdown{
     position: fixed;
-    top: 30px;
+    top: 50px;
     right: 20px;
     font-family: 'Cinzel';
 }
@@ -261,7 +261,7 @@ body {
     width: 100%;
     color: whitesmoke;
     font-size: 1.2rem;
-    padding: 1rem;
+    padding: 2rem 0 2rem 0;
     background-color: rgba(0, 0, 0, 0.605);
 }
 
@@ -351,11 +351,16 @@ span {
 
 .images {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     flex-wrap: wrap;
+}
 
+#projects{
+border: none;
+background-color: transparent;
+box-shadow: none;
 }
 
 .images a:hover {
@@ -366,7 +371,7 @@ span {
     box-shadow: 10px 10px 5px rgb(61, 61, 61);
     border: 1px #315158 solid;
     border-radius: 8%;
-    background-color: rgba(0, 0, 0, 0.653);
+    background-color: rgba(68, 68, 68, 0.503);
     height: 9rem;
     margin: 3rem ;
 }
