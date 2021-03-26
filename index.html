@@ -4,7 +4,10 @@
 		<meta charset="utf-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<title>FrontEnd Portfolio</title>
-		<meta name="description" content="" />
+		<meta
+			name="description"
+			content="Web Developer: Austin Blake, Located near Cincinnati Ohio, WebDeveloper Portfolio"
+		/>
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="style.css" type="text/css" />
 		<link rel="stylesheet" href="reset.css" type="text/css" />
@@ -14,7 +17,6 @@
 			href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap"
 			rel="stylesheet"
 		/>
-		<link rel="preconnect" href="" />
 		<link
 			href="https://fonts.googleapis.com/css2?family=Vollkorn&display=swap"
 			rel="stylesheet"
@@ -59,6 +61,18 @@
 				<h1 class="secondary-title"><em>FrontEnd WebDeveloper</em></h1>
 			</div>
 		</div>
+
+		<section class="about-container">
+			<main id="about" class="about">
+				<h2>WHO AM I?</h2>
+				<br />
+				<p>
+					My name is Blake, I am a developer located just outside of
+					Cincinnati Ohio.
+				</p>
+			</main>
+		</section>
+
 		<main class="main">
 			<div class="skill-container">
 				<section class="skills">
@@ -88,30 +102,51 @@
 					</ul>
 				</div>
 			</div>
-			<section class="about-container">
-				<article id="about" class="about">
-					<h2>WHO AM I?</h2>
-					<br />
-					<p>
-						My name is Blake, I am a developer located just outside of
-						Cincinnati Ohio.
-					</p>
-					<h3>My History</h3>
-					<p>
-						My education is in construction management. I served in the US Armed
-						Forces (Airspace management / network systems), City Police Officer.
-					</p>
-				</article>
-			</section>
-			<article class="img-container">
-				<div id="disclaimer">
+			<article class="project-container">
+				<article class="disclaimer">
 					<h3>Check Out My Projects!</h3>
 					<p>
 						Disclaimer: Free Hosting via Netlify -May take a second to load-
 					</p>
-				</div>
-				<section class="images">
-					<div class="website">
+				</article>
+				<article class="my-projects">
+					<section class="website">
+						<a href="https://cain-and-company.netlify.app"
+							><h1>Cain & Co. Boot Supply</h1></a
+						>
+						<a href="https://cain-and-company.netlify.app"
+							><img
+							id='cain'
+								class="project-img"
+								src="assets/zac-wolff-esxf7PJmExQ-unsplash.jpg"
+								alt="Media not supported"
+								aria-label="Cain & Co. Homepage"
+						/></a>
+						<article class="project-info">
+							<p>
+								Built using <span>React,</span> utilizing functional components, Context, Router, Hooks, useReducer & styled components. 
+								<br><br>
+							</p>
+							<p>
+								**Application Simulates fetching data from api, stores data in Context to be later displayed to user.
+								<br><br>
+							</p>
+							<p>
+								Application implements data filtering by gender and brand, individual item page allows user to choose amount of items, boot size and add to cart.
+								<br><br>
+							</p>
+							<p>
+								Cart Icon updates cart amount in real-time. Inside cart if amount is at one and "-" is clicked, item is removed from cart.
+								<br><br> **(Hard coded actual data & Commented out API fetch)<br><br>
+							</p>
+							<p>
+								<a href="https://github.com/Austin-Blake/Cain-Co"
+									>GitHub Repo</a
+								>
+							</p>
+						</article>
+					</section>
+					<section class="website">
 						<a href="https://reddit-concave.netlify.app"
 							><h1>Reddit Concave</h1></a
 						>
@@ -122,22 +157,54 @@
 								alt="Media not supported"
 								aria-label="person sitting with burning news paper"
 						/></a>
-						<p>
-							Created using <span>React,</span> functional components.
-							Hooks(useReducer, useEffect), and Axios.
-						</p>
-						<p>
-							Built on Reddit's Unofficial API, this application displays user
-							posted content. You have the option to search for any SubReddit,
-							Choose from most popular, or scroll the default "popular"
-							category.
-						</p>
-						<p>
-							<a href="https://github.com/Austin-Blake/Reddit_Conclave"
-								>GitHub Repo</a
-							>
-						</p>
-					</div>
+						<article class="project-info">
+							<p>
+								Created using <span>React,</span> functional components.
+								Hooks(useReducer, useEffect), and Axios.
+								<br><br>
+							</p>
+							<p>
+								Built on Reddit's Unofficial API, this application displays user
+								posted content.
+								<br><br>
+								You have the option to search for any SubReddit,
+								Choose from "Most popular categories", or scroll the default "popular"
+								category.
+								<br><br>
+							</p>
+							<p>
+								<a href="https://github.com/Austin-Blake/Reddit_Conclave"
+									>GitHub Repo</a
+								>
+							</p>
+						</article>
+					</section>
+					<section class="website">
+						<a href="https://dancross-cpa.netlify.app"
+							><h1>CPA, Accounting Company</h1></a
+						>
+
+						<a href="https://dancross-cpa.netlify.app"
+							><img
+								class="project-img"
+								src="assets/gilly-JMCaiVNs3VQ-unsplash.jpg"
+								alt="Media not supported"
+								aria-label="orange/white cross image"
+						/></a>
+						<article class="project-info">
+							<p>
+								Built for a local business, bringing his company a fresh new look.
+								Intergrated with a fully dynamic navigation panel, to seamlessly
+								find what your looking for. <br /><br />This website was also
+								built from scratch via HTML, CSS, vanilla JS, and Anime.js.
+							</p>
+							<p>
+								<a href="https://github.com/Austin-Blake/DanCrossCPA"
+									>GitHub Repo</a
+								>
+							</p>
+						</article>
+					</section>
 					<div class="website">
 						<a href="https://fullframemoto.netlify.app"
 							><h1>Photography Portfolio/Website.</h1></a
@@ -150,70 +217,23 @@
 								alt="Media not supported"
 								aria-label="black jug with motorcycle image"
 						/></a>
-						<p>
-							This site is still in build, but you can preview the demo here.<br><br>
-							Utilizing a simple home page with a design for easy navigation. Also implemented some animation
-							for visual interest.<br><br>
-							This website was built from scratch via HTML, CSS, vanilla JS, and
-							Anime.js
-						</p>
-						<p>
-							<a href="https://github.com/Austin-Blake/FullFrameMoto"
-								>GitHub Repo</a
-							>
-						</p>
+						<article class="project-info">
+							<p>
+								This site is still in build, but you can preview the demo here.<br><br>
+								Utilizing a simple home page with a design for easy navigation.
+								Also implemented some animation for visual interest.<br><br>
+								This website was built from scratch via HTML, CSS, vanilla JS, and
+								Anime.js
+							</p>
+							<p>
+								<a href="https://github.com/Austin-Blake/FullFrameMoto"
+									>GitHub Repo</a
+								>
+							</p>
+						</article>
 					</div>
-					<div class="website">
-						<a href="https://dancross-cpa.netlify.app"
-							><h1>CPA, Accounting Company</h1></a
-						>
-
-						<a href="https://dancross-cpa.netlify.app"
-							><img
-								class="project-img"
-								src="./assets/DanCross_logo.jpg"
-								alt="Media not supported"
-								aria-label="orange/white cross image"
-						/></a>
-
-						<p>
-							Built for a local business, bringing his company a fresh new look.
-							Intergrated with a fully dynamic navigation panel, to seamlessly
-							find what your looking for. <br><br>This website was also built from
-							scratch via HTML, CSS, vanilla JS, and Anime.js.
-						</p>
-						<p>
-							<a href="https://github.com/Austin-Blake/DanCrossCPA"
-								>GitHub Repo</a
-							>
-						</p>
-					</div>
-					<div class="website">
-						<a href="https://christmas-list-creator.netlify.app"
-							><h1>Christmas List App</h1></a
-						>
-						<a href="https://christmas-list-creator.netlify.app"
-							><img
-								class="project-img"
-								src="./assets/mike-arney-9r-_2gzP37k-unsplash.jpg"
-								alt="Media not supported"
-								aria-label="santa and child image"
-						/></a>
-						<p>
-							Created using <span>React,</span> utilizing functional components.
-							I intergrated conditional rendering as well.
-						</p>
-						<p>
-							After input, the App Displays the persons name, item and an item
-							description.
-						</p>
-						<p>
-							<a href="https://github.com/Austin-Blake/ReactChristmasList"
-								>GitHub Repo</a
-							>
-						</p>
-					</div>
-				</section>
+					
+				</article>
 			</article>
 		</main>
 		<footer class="footer">

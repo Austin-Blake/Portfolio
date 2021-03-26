@@ -19,13 +19,13 @@ body {
     overflow-x: hidden;
     min-width: 320px;
     font-family: "Vollhorn";
-    background-color: rgb(226, 218, 218);
+    background-color: rgb(255, 255, 255);
 }
 .nav-bar {
     width: 100%;
     height: fit-content;
     padding: 2rem;
-    background-color: rgb(226, 218, 218);
+    background-color: rgb(255, 255, 255);
 }
 
 .nav-bar a{
@@ -39,9 +39,11 @@ body {
     top: 50px;
     right: 20px;
     font-family: 'Cinzel';
+    z-index: 999;
 }
 
 .dropdown .dropbtn{
+    
     position: fixed;
     top: 10px;
     right: 20px;
@@ -70,10 +72,11 @@ body {
     min-width: 160px;
     border: 1px black solid;   
     background: rgb(12,4,2);
-    background: linear-gradient(49deg, rgba(39, 36, 36, 0.748) 9%, rgb(15, 64, 88) 67%, rgba(98, 82, 82, 0.503) 100%);
+    background: linear-gradient(49deg, rgb(39, 36, 36) 9%, rgb(173, 176, 177) 67%, rgba(98, 82, 82, 0.755) 100%);
 }
 
 .dropdown-content a{
+    
     color: white;
     padding: 1.5rem .3rem 1.5rem 1.5rem;
     text-align: left;
@@ -89,6 +92,7 @@ body {
 .dropdown .dropdown-content {
     display: none;
     visibility: visible;
+    
 }
 
 .animate {
@@ -109,7 +113,7 @@ body {
 }
   
 .hero-title{
-    z-index: 1;
+    
     width: 80%;
     height: 50%;    
 }
@@ -122,7 +126,7 @@ body {
     height: 80vh;
     text-align: center;
     color: #b28e5c;
-    z-index: -2;
+    z-index: -1;
 }
 
 .hero {
@@ -130,7 +134,7 @@ body {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    background-color: rgba(0, 0, 0, 0.646);
+    background-color: rgba(0, 0, 0, 0.499);
     height: 100%;
     width: 100vw;
 }
@@ -149,14 +153,14 @@ body {
     height: 30%;
     width: 100%;    
 }
-
+/* add animation */
 .secondary-title {
     text-align: center;
     font-size: 2.5rem;
     line-height: 1em;
     font-family: 'Cinzel';
     color:rgb(31, 30, 37);
-    width: 90%;
+    width: 100%;
 }
 
 .main {
@@ -166,7 +170,7 @@ body {
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
-    background-color: rgb(226, 218, 218);
+    background-color: rgb(255, 255, 255);
 }
 
 .skill-container{
@@ -179,6 +183,7 @@ body {
     background-position: bottom;
     background-repeat: no-repeat;
     border-radius: 30%;
+    
 }
 
 .skills h3 {
@@ -202,7 +207,7 @@ body {
     font-size: 1.7rem;
     padding: 1rem;
     font-weight: 700;
-    color:rgb(226, 218, 218);
+    color:rgb(255, 255, 255);
 }
 
 .skills {
@@ -210,7 +215,7 @@ body {
     width: 90vw;
     border-radius: 30%;
     padding: 3rem;
-    background-color: rgba(23, 23, 23, 0.489);
+    background-color: rgba(23, 23, 23, 0.537);
     box-shadow: 20px 10px 15px rgb(61, 61, 61);
 }
 
@@ -237,30 +242,30 @@ body {
 }
 
 .about-container {
-    margin: 2rem;
-    width: 80%;
+    margin: 2rem auto;
+    width: 50%;
     height: fit-content;
-    max-height: fit-content;
     display:flex;
-    flex-direction: column;
     flex-wrap: wrap;
+    align-items: center;
     justify-content: center;
     font-family: "Vollkorn", sans-serif;
-    background-image: url('./assets/domenico-loia-EhTcC9sYXsw-unsplash.jpg'); 
+    background-image: url('./assets/domenico-loia-EhTcC9sYXsw-unsplash.jpg');
+    background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    border: .5rem black solid;
-    box-shadow: 20px 10px 15px rgb(44, 43, 43);
+    border: 1px rgba(255, 0, 0, 0.816) solid;
+    box-shadow: 20px 10px 15px rgb(74, 33, 33);
     
 }
 
 .about {
-    margin: auto;
     text-align: center;
     height: 100%;
     width: 100%;
     color: whitesmoke;
     font-size: 1.2rem;
+    margin: auto 0;
     padding: 2rem 0 2rem 0;
     background-color: rgba(0, 0, 0, 0.605);
 }
@@ -281,14 +286,6 @@ body {
     text-align: center;
 }
 
-.about :nth-child(3) {
-    padding-bottom: 1em;
-} 
-
-.about :nth-child(6){
-    padding-top: 1em;
-}
-
 #disclaimer h3 {
     display: block;
     font-size: 3rem;
@@ -297,7 +294,7 @@ body {
     text-align: center;
 }
 
-.img-container {
+.project-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -305,7 +302,7 @@ body {
     flex-wrap: wrap;
 }
 
-#disclaimer {
+.disclaimer {
     display: block;
     font-size: 1rem;
     padding: 1rem;
@@ -313,48 +310,62 @@ body {
     text-align: center;
 }
 
-#disclaimer p {
+.disclaimer p {
     padding: 1rem;
+    color: rgb(32, 218, 38);
+    animation: pulse 3000ms infinite;
+}
+
+.disclaimer p:hover{
+    animation: none;
+}
+.my-projects {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.project-info{
+    display: flex;
+    margin: 0 auto;
 }
 
 .website{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
+    width: 100%;
 }
 
 .website h1 {
-    padding: 1rem;
-    font-size: 2rem;
+    padding: 2.5rem;
+    font-size: clamp(2rem, 5vw, 10rem);
     text-align: center;
-    line-height: 1.8rem;
-    background-color: #000;
-    color: #fff;
+    line-height: clamp(2rem, 5vw, 5rem);
+    background-color: rgb(253, 95, 95);
+    border-radius: 25%;
+    color: white;
+}
+
+.website h1:hover{
+    color: black;
+    border-radius: 10%;
+    animation: float 10ms ease-in-out 25;
+    transition: 100ms ease-in;
+    
 }
 
 span {
     color: maroon;
 }
-.website p {
-    max-width: 25rem;
-    font-size: 1.3rem;
-    text-align: center;
-    margin-bottom: 1.5rem;
-    font-family: "Vollkorn";
-}
 
 .website a {
     padding: 1rem;
     color: maroon;
-}
-
-.images {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: flex-start;
-    flex-wrap: wrap;
+    margin: 0 auto;
 }
 
 #projects{
@@ -363,27 +374,43 @@ background-color: transparent;
 box-shadow: none;
 }
 
-.images a:hover {
-    transform: translateX(.2rem) translateY(.6rem);
+#cain{
+    width: 13rem;
+    height: 15rem;
 }
-
 .project-img {
     box-shadow: 10px 10px 5px rgb(61, 61, 61);
     border: 1px #315158 solid;
     border-radius: 8%;
     background-color: rgba(68, 68, 68, 0.503);
     height: 9rem;
-    margin: 3rem ;
+    margin: 3rem;
+}
+.project-img:hover{
+    transform: scale(1.6);
+    transition: 400ms ease;
+}
+
+.project-info{
+    display: flex;
+    flex-direction: column;
+    padding: 0 1rem;
+    max-width: 35rem;
+    font-size: 1.3rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    font-family: "Vollkorn";
+    border-bottom: 3px solid black;
 }
 
 .footer {
     text-align: center;
-    margin-top: 1.5rem;
     height: fit-content;
     font-family: 'Cinzel';
     font-size: 1.5rem;
-    background-color: rgb(226, 218, 218);
-    border-top: .3rem solid #dcdcdc;
+    padding: .3rem;
+    color: white;
+    background-color: rgb(0, 0, 0);
     box-shadow: 0 0 .3rem 2px rgb(120, 120, 120);
 }
 
@@ -402,6 +429,20 @@ box-shadow: none;
         
 		transform: scale(0.8);
 		opacity: 0.7;	
+	}			
+}
+@keyframes float {
+	0% {
+		transform: translateX(12px) ;		
+	}
+	50% {
+        
+		transform: translateX(-12px);
+	}	
+	100% {
+        
+		transform: translateX(0);
+		opacity: 1;	
 	}			
 }
 @keyframes slide {
@@ -426,8 +467,8 @@ box-shadow: none;
         height: 50vh;
     }
 
-    .about-container, .about{
-        height: fit-content;
+    .about-container{
+        width: 80vw;
     }
     
     .project-img {
