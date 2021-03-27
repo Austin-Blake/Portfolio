@@ -33,9 +33,15 @@
 				src="./assets/Asset 4@3x.png"
 			/>
 			<nav id="ddown" class="dropdown">
-				<button id="btn" class="dropbtn" role="button" tabindex="0">
-					Menu ▼
-				</button>
+				<section id="btn" class="dropbtn" role="button">
+					<div id="btn1"  tabindex="0">
+					</div>
+					<div id="btn2" role="button" tabindex="0">
+					</div>
+					<div id="btn3" role="button" tabindex="0">
+				
+				</div>
+			</section>
 				<div id="content" class="dropdown-content">
 					<a class="mission-nav" href="#">Home</a>
 					<a class="home-nav" href="#projects">Projects</a>
@@ -66,9 +72,15 @@
 			<main id="about" class="about">
 				<h2>WHO AM I?</h2>
 				<br />
-				<p>
-					My name is Blake, I am a developer located just outside of
-					Cincinnati Ohio.
+					My name is Austin, I am a web developer located just outside of
+					Cincinnati Ohio. 
+					<br><br>
+					<span>const isSpecializing = (React, JavaScript) => {<br>
+						return (<br>
+							"My Focus is in React &Javascript!"
+						)
+					}</span><br><br>
+					isSpecializing(React, JavaScript);
 				</p>
 			</main>
 		</section>
@@ -102,11 +114,11 @@
 					</ul>
 				</div>
 			</div>
-			<article class="project-container">
+			<article id='my_projects' class="project-container">
 				<article class="disclaimer">
 					<h3>Check Out My Projects!</h3>
 					<p>
-						Disclaimer: Free Hosting via Netlify -May take a second to load-
+						Disclaimer:<br> Free Hosting via Netlify -May take a second to load-
 					</p>
 				</article>
 				<article class="my-projects">
@@ -118,9 +130,9 @@
 							><img
 							id='cain'
 								class="project-img"
-								src="assets/zac-wolff-esxf7PJmExQ-unsplash.jpg"
+								src="newAssests/Artboard 9.jpg"
 								alt="Media not supported"
-								aria-label="Cain & Co. Homepage"
+								aria-label="Brown Leather Boot, link to Cain and Co."
 						/></a>
 						<article class="project-info">
 							<p>
@@ -153,9 +165,9 @@
 						<a href="https://reddit-concave.netlify.app"
 							><img
 								class="project-img"
-								src="assets\nijwam-swargiary-FPNnKfjcbNU-unsplash.jpg"
+								src="newAssests/Artboard 8.jpg"
 								alt="Media not supported"
-								aria-label="person sitting with burning news paper"
+								aria-label="person sitting in empty warehouse with burning news paper"
 						/></a>
 						<article class="project-info">
 							<p>
@@ -187,7 +199,7 @@
 						<a href="https://dancross-cpa.netlify.app"
 							><img
 								class="project-img"
-								src="assets/gilly-JMCaiVNs3VQ-unsplash.jpg"
+								src="newAssests/Artboard 10.jpg"
 								alt="Media not supported"
 								aria-label="orange/white cross image"
 						/></a>
@@ -206,7 +218,7 @@
 						</article>
 					</section>
 					<div class="website">
-						<a href="https://fullframemoto.netlify.app"
+						<a href="https://fullframemoto.netlify.app" 
 							><h1>Photography Portfolio/Website.</h1></a
 						>
 						<a href="https://fullframemoto.netlify.app"
@@ -217,7 +229,8 @@
 								alt="Media not supported"
 								aria-label="black jug with motorcycle image"
 						/></a>
-						<article class="project-info">
+						<article class="project-info"
+						aria-label="Whiskey City Photography project information">
 							<p>
 								This site is still in build, but you can preview the demo here.<br><br>
 								Utilizing a simple home page with a design for easy navigation.
@@ -241,7 +254,7 @@
 				<p>♥ Proudly Designed/Built in Cincinnati OH</p>
 			</nav>
 		</footer>
-		<script src="./node_modules/animejs/lib/anime.es.js" type="module"></script>
-		<script src="./app.mjs" type="module"></script>
+		<script src="./node_modules/animejs/lib/anime.min.js"></script>
+		<script src="./index.js" type="module"></script>
 	</body>
 </html>

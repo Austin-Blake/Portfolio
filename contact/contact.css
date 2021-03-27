@@ -16,7 +16,7 @@ body {
     width: 100%;
     height: fit-content;
     padding: 2rem;
-    background-color: rgb(226, 218, 218);
+    background-color: rgb(255, 255, 255);
 }
 
 .nav-bar a{
@@ -24,40 +24,65 @@ body {
     text-decoration: none;
     color: white;
 }
+.dropdown .dropbtn {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: -2rem;
+    right: 0;
+    padding: 2px;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+#btn1{
+    width: 30px;
+    height: 3.5px;
+    margin-bottom: .2rem;
+    background-color: rgb(122, 122, 122);
+
+}
+#btn2{
+    margin: 0 auto;
+    width: 25px;
+    height: 2px;
+    background-color: rgb(122, 122, 122);
+
+}
+#btn3{
+    width: 30px;
+    height: 3.5px;
+    margin-top: .2rem;
+    background-color: rgb(122, 122, 122);
+}
 
 .dropdown{
-    position: absolute;
-    top: 30px;
+    position: fixed;
+    top: 50px;
     right: 20px;
     font-family: 'Cinzel';
+    z-index: 999;
 }
 
-.dropdown .dropbtn{
-    font-size: clamp(1rem, 2vw, 3rem);
-    font-weight: 500;
-    border: 1px solid rgb(8, 8, 8);
-    color: rgb(255, 255, 255);
-    padding: .4rem 2rem;
-    background-color: rgb(0, 0, 0);
-    margin: 0;
-    cursor: pointer;
+.nav-bar a:hover, .dropbtn {
+    background-color: rgb(255, 255, 255);
+    color: #000;
 }
 
-.nav-bar a:hover, .dropdown:hover .dropbtn {
-    background-color: rgb(245, 245, 245);
-    color: black;
+a:focus, button:focus {
+    outline: 5px double orange;
 }
-
 
 .dropdown-content {
     z-index: 10;
-    font-size: clamp(1rem, 2vw, 3rem);
+    font-size: 1.9rem;
     visibility: hidden;
     color: rgb(255, 255, 255);
     min-width: 160px;
     border: 1px black solid;   
     background: rgb(12,4,2);
-    background: linear-gradient(49deg, rgba(39, 36, 36, 0.748) 9%, rgb(15, 64, 88) 67%, rgba(98, 82, 82, 0.503) 100%);
+    background: linear-gradient(49deg, rgb(39, 36, 36) 9%, rgb(173, 176, 177) 67%, rgba(98, 82, 82, 0.755) 100%);
 }
 
 .dropdown-content a{
@@ -69,13 +94,18 @@ body {
 }
 
 .dropdown-content a:hover {
-    background-color: rgba(241, 241, 241, 0.673);
+    background-color: rgba(174, 173, 173, 0.673);
     color: black;
 }
 
 .dropdown .dropdown-content {
     display: none;
     visibility: visible;
+    
+}
+
+.animate {
+    animation: slide 4000ms 1;
 }
 
 .pulse {
@@ -150,12 +180,12 @@ input, textarea{
 .footer {
     text-align: center;
     margin-top: 1.5rem;
-    height: fit-content;
-    width: fit-content;
+    height: 3rem;
+    width: 100%;
     font-family: 'Cinzel';
     font-size: 1.5rem;
-    background-color: rgb(226, 218, 218);
-    border-top: .3rem solid #dcdcdc;
+    color: white;
+    background-color: rgb(0, 0, 0);
 }
 
 @keyframes pulse {
