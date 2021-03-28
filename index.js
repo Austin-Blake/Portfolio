@@ -8,18 +8,24 @@ let isAnimating = false;
 let btn1 = document.getElementById('btn1');
 let btn2 = document.getElementById('btn2');
 let btn3 = document.getElementById('btn3');
-
+let btn = [btn1, btn2, btn3];
 //Menu Open Event Listener//
 //Open Menu, activate animations..css animations included//
 
 menu.addEventListener("click", function () {
 	if (!isAnimating) {
-		drop.style.display = "block";
+		btn.map((button) => {
+			button.style.backgroundColor = "red";
+		});
+		drop.style.display = 'block';
 		logo.classList.add("pulse");
 		menuOpen();
 		isAnimating = !isAnimating;
 	} else {
-		drop.style.display = "none";
+		btn.map((button) => {
+			button.style.backgroundColor = "maroon";
+		})
+		drop.style.display = 'none';
 		logo.classList.remove("pulse");
 		menuClose();
 		isAnimating = !isAnimating;
@@ -28,10 +34,15 @@ menu.addEventListener("click", function () {
 //Menu Close EventListener//
 
 drop.addEventListener("mouseleave", () => {
-	drop.style.display = "none";
+	setTimeout(() => {
+		btn.map((button) => {
+			button.style.backgroundColor = "maroon";
+		})
+	drop.style.display = 'none';
 	logo.classList.remove("pulse");
 	menuClose();
 	isAnimating = false;
+	},1000)
 });
 
 //Animation Function for Menu Open//
@@ -108,7 +119,7 @@ const hideMenu = () => {
 	anime({
 		targets: [menu, dropDown],
 		opacity: [0, 1],
-		duration: 1200,
+		duration: 1000,
 		easing: 'easeInOutExpo',
 		endDelay: 1000
 	})
