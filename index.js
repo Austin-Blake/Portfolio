@@ -104,7 +104,7 @@ let timeLine = () => {
 		opacity: [0.0, 1],
 		delay: anime.stagger(250),
 		duration: 2000,
-		endDelay: 1500,
+		endDelay: 3000,
 		loop: true
 	});
 }

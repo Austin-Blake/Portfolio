@@ -21,6 +21,11 @@
 			href="https://fonts.googleapis.com/css2?family=Vollkorn&display=swap"
 			rel="stylesheet"
 		/>
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Monoton&display=swap"
+			rel="stylesheet"
+		/>
 		<link rel="icon" href="./assets/Whiskey Jug Logo.png" />
 	</head>
 	<body>
@@ -33,13 +38,10 @@
 				src="./assets/Asset 4@3x.png"
 			/>
 			<nav id="ddown" class="dropdown">
-					<button id="btn" class="dropbtn" role="button">
-						<div id="btn1"  tabindex="0">
-						</div>
-						<div id="btn2" role="button" tabindex="0">
-						</div>
-						<div id="btn3" role="button" tabindex="0">
-				</div>
+				<button id="btn" class="dropbtn" role="button">
+					<div id="btn1" tabindex="0"></div>
+					<div id="btn2" role="button" tabindex="0"></div>
+					<div id="btn3" role="button" tabindex="0"></div>
 				</button>
 				<div id="content" class="dropdown-content">
 					<a class="mission-nav" href="#">Home</a>
@@ -75,19 +77,31 @@
 					My name is Austin, I am a web developer located just outside of
 					Cincinnati Ohio.
 				</h3>
-					<br><br>
+				<br /><br />
 				<p>
-					<span>const isSpecializing = (react, javaScript) => {<br>
-						return (<br>
-							`My Focus is in ${react} & ${javascript}!`
-						)
-					};</span><br><br>
+					<span
+						>const isSpecializing = (react, javaScript) => {<br />
+						return (<br />
+						`My Focus is in ${react} & ${javascript}!` ) };</span
+					><br /><br />
 					isSpecializing(React, JavaScript);
 				</p>
 			</main>
 		</section>
 
 		<main class="main">
+			<div class="knowledge-container">
+				<div class="knowledge">
+					<h3>Fundamental Knowledge</h3>
+					<ul id="knowlege-list">
+						<li>TDD</li>
+						<li>Validation</li>
+						<li>ES6 Semantics</li>
+						<li>Responsive Styling</li>
+						<li>Accessibility Practices</li>
+					</ul>
+				</div>
+			</div>
 			<div class="skill-container">
 				<section class="skills">
 					<h3>Current Skill Set Includes</h3>
@@ -104,23 +118,12 @@
 					</ul>
 				</section>
 			</div>
-			<div class="knowledge-container">
-				<div class="knowledge">
-					<h3>Fundamental Knowledge</h3>
-					<ul id="knowlege-list">
-						<li>TDD</li>
-						<li>Validation</li>
-						<li>ES6 Semantics</li>
-						<li>Responsive Styling</li>
-						<li>Accessibility Practices</li>
-					</ul>
-				</div>
-			</div>
-			<article id='my_projects' class="project-container">
+			<article id="my_projects" class="project-container">
 				<article class="disclaimer">
 					<h3>Check Out My Projects!</h3>
 					<p>
-						Disclaimer:<br> Free Hosting via Netlify -May take a second to load-
+						Disclaimer:<br />
+						Free Hosting via Netlify -May take a second to load-
 					</p>
 				</article>
 				<article class="my-projects">
@@ -130,32 +133,38 @@
 						>
 						<a href="https://cain-and-company.netlify.app"
 							><img
-							id='cain'
+								id="cain"
 								class="project-img"
-								src="newAssests/Artboard 9.jpg"
+								src="newAssests/Artboard 15.jpg"
 								alt="Media not supported"
 								aria-label="Brown Leather Boot, link to Cain and Co."
 						/></a>
 						<article class="project-info">
 							<p>
-								Built using <span>React,</span> utilizing functional components, Context, Router, Hooks, useReducer & styled components. 
-								<br><br>
+								Built using <span>React,</span> utilizing functional components,
+								Context, Router, Hooks, useReducer & styled components.
+								<br /><br />
 							</p>
 							<p>
-								**Application Simulates fetching data from api, stores data in Context to be later displayed to user.
-								<br><br>
+								**Application Simulates fetching data from api, stores data in
+								Context to be later displayed to user.
+								<br /><br />
 							</p>
 							<p>
-								Application implements data filtering by gender and brand, individual item page allows user to choose amount of items, boot size and add to cart.
-								<br><br>
+								Application implements data filtering by gender and brand,
+								individual item page allows user to choose amount of items, boot
+								size and add to cart.
+								<br /><br />
 							</p>
 							<p>
-								Cart Icon updates cart amount in real-time. Inside cart if amount is at one and "-" is clicked, item is removed from cart.
-								<br><br> **(Hard coded actual data & Commented out API fetch)<br><br>
+								Cart Icon updates cart amount in real-time. Inside cart if
+								amount is at one and "-" is clicked, item is removed from cart.
+								<br /><br />
+								**(Hard coded actual data & Commented out API fetch)<br /><br />
 							</p>
 							<p>
 								<a href="https://github.com/Austin-Blake/Cain-Co"
-									>GitHub Repo</a
+									>GitHub Source Code</a
 								>
 							</p>
 						</article>
@@ -174,28 +183,27 @@
 						<article class="project-info">
 							<p>
 								Created using <span>React,</span> functional components.
-								Hooks(useReducer, useEffect), and Axios.
-								<br><br>
+								Hooks(useReducer, useEffect), and Axios. <br /><br />
 							</p>
 							<p>
 								Built on Reddit's Unofficial API, this application displays user
 								posted content.
-								<br><br>
-								You have the option to search for any SubReddit,
-								Choose from "Most popular categories", or scroll the default "popular"
+								<br /><br />
+								You have the option to search for any SubReddit, Choose from
+								"Most popular categories", or scroll the default "popular"
 								category.
-								<br><br>
+								<br /><br />
 							</p>
 							<p>
 								<a href="https://github.com/Austin-Blake/Reddit_Conclave"
-									>GitHub Repo</a
+									>GitHub Source Code</a
 								>
 							</p>
 						</article>
 					</section>
 					<section class="website">
 						<a href="https://dancross-cpa.netlify.app"
-							><h1>CPA, Accounting Company</h1></a
+							><h1>Dan Cross, CPA</h1></a
 						>
 
 						<a href="https://dancross-cpa.netlify.app"
@@ -203,25 +211,25 @@
 								class="project-img"
 								src="newAssests/Artboard 10.jpg"
 								alt="Media not supported"
-								aria-label="orange/white cross image"
+								aria-label="glass curtin wall building, with cars driving by."
 						/></a>
 						<article class="project-info">
 							<p>
-								Built for a local business, bringing his company a fresh new look.
-								Intergrated with a fully dynamic navigation panel, to seamlessly
-								find what your looking for. <br /><br />This website was also
-								built from scratch via HTML, CSS, vanilla JS, and Anime.js.
+								Built for a local business and Bringing his company a fresh new
+								look. Simple, Static, & Straight to the point.
+								<br /><br />This website was also built from scratch via HTML,
+								CSS, vanilla JS, and Anime.js. <br /><br />
 							</p>
 							<p>
 								<a href="https://github.com/Austin-Blake/DanCrossCPA"
-									>GitHub Repo</a
+									>GitHub Source Code</a
 								>
 							</p>
 						</article>
 					</section>
 					<div class="website">
-						<a href="https://fullframemoto.netlify.app" 
-							><h1>Photography Portfolio/Website.</h1></a
+						<a href="https://fullframemoto.netlify.app"
+							><h1>Whiskey City Photography</h1></a
 						>
 						<a href="https://fullframemoto.netlify.app"
 							><img
@@ -231,23 +239,27 @@
 								alt="Media not supported"
 								aria-label="black jug with motorcycle image"
 						/></a>
-						<article class="project-info"
-						aria-label="Whiskey City Photography project information">
+						<article
+							class="project-info"
+							aria-label="Whiskey City Photography project information"
+						>
 							<p>
-								This site is still in build, but you can preview the demo here.<br><br>
-								Utilizing a simple home page with a design for easy navigation.
-								Also implemented some animation for visual interest.<br><br>
-								This website was built from scratch via HTML, CSS, vanilla JS, and
-								Anime.js
+								This site is still in build, but you can preview the demo
+								here.<br /><br />
+								Utilizing a simple home page with clean design for easy
+								navigation.
+								<br /><br />
+								This website was built from scratch via HTML, CSS, vanilla JS,
+								and Anime.js.
+								<br /><br />
 							</p>
 							<p>
 								<a href="https://github.com/Austin-Blake/FullFrameMoto"
-									>GitHub Repo</a
+									>GitHub Source Code</a
 								>
 							</p>
 						</article>
 					</div>
-					
 				</article>
 			</article>
 		</main>
