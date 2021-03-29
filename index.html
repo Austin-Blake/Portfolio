@@ -8,7 +8,7 @@
 			name="description"
 			content="Web Developer: Austin Blake, Located near Cincinnati Ohio, WebDeveloper Portfolio"
 		/>
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
 		<link rel="stylesheet" href="style.css" type="text/css" />
 		<link rel="stylesheet" href="reset.css" type="text/css" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" />
@@ -39,7 +39,8 @@
 			/>
 			<nav id="ddown" class="dropdown">
 				<button id="btn" class="dropbtn" role="button">
-					<div id="btn1" tabindex="0"></div>
+					
+					<div id="btn1" role="button" tabindex="0"></div>
 					<div id="btn2" role="button" tabindex="0"></div>
 					<div id="btn3" role="button" tabindex="0"></div>
 				</button>
@@ -70,23 +71,23 @@
 		</div>
 
 		<section class="about-container">
+			<div class="about-wrapper">
 			<main id="about" class="about">
 				<h2>WHO AM I?</h2>
-				<br />
 				<h3>
-					My name is Austin, I am a web developer located just outside of
-					Cincinnati Ohio.
+					My name is Austin, I am a web developer located near Cincinnati, Ohio.
 				</h3>
-				<br /><br />
-				<p>
 					<span
 						>const isSpecializing = (react, javaScript) => {<br />
-						return (<br />
-						`My Focus is in ${react} & ${javascript}!` ) };</span
+						return (
+						`My Focus is in ${react} & ${javascript}!` ) };
+					</span
 					><br /><br />
-					isSpecializing(React, JavaScript);
-				</p>
+					<p>
+						isSpecializing(React, JavaScript);
+					</p>
 			</main>
+		</div>
 		</section>
 
 		<main class="main">

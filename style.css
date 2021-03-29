@@ -30,7 +30,7 @@ body {
 .dropdown{
     position: fixed;
     top: 2rem;
-    right: 0rem;
+    right: 1rem;
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
@@ -52,21 +52,20 @@ body {
     width: 40px;
     height: 3.5px;
     margin-bottom: .2rem;
-    background-color: maroon;
-
+    background-color: rgb(48, 8, 118);
 }
 #btn2{
     margin: 0 auto;
     width: 25px;
     height: 2px;
-    background-color: maroon;
+    background-color: rgb(48, 8, 118);
 
 }
 #btn3{
     width: 40px;
     height: 3.5px;
     margin-top: .2rem;
-    background-color: maroon;
+    background-color: rgb(48, 8, 118);
 }
 
 a:focus, button:focus {
@@ -107,11 +106,15 @@ a:focus, button:focus {
 
 .logo {
     position: relative;
-    top: 2rem;
+    top: 2.1rem;
     width: 6rem;
-    height: 6rem;
+    height: 5.5rem;
+    padding: .5rem;
     margin-top: -4rem;
-    padding-top: -1rem;
+    border-radius: 50%;
+    background-color: rgb(198, 166, 253);
+    box-shadow: 0 0px 35px 20px rgb(54, 16, 83) inset;
+    transform: rotate(-10deg)
 }
   
 .hero-title{
@@ -135,7 +138,7 @@ a:focus, button:focus {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    background-color: rgba(5, 18, 83, 0.585);
+    background-color: rgba(42, 7, 74, 0.68);
     height: 100%;
     width: 100%;
 }
@@ -181,47 +184,59 @@ a:focus, button:focus {
 /* ABOUT */
 
 .about-container {
-    margin: 2rem auto;
-    width: 55%;
-    height: fit-content;
+    margin: 3rem auto;
+    width: 40%;
+    height: 100%;
     display:flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     font-family: "Vollkorn", sans-serif;
-    background-image: url("newAssests/Artboard 13.jpg");
-    background-size: cover;
-    background-position: center;
-    border: 1px rgba(255, 0, 0, 0.816) solid;
-    
-    
+    border-radius: 50%;
+    padding: 4rem 3rem;
+    background-color: rgba(169, 30, 194, 0.979);
+    box-shadow: 0px 0px 80px 10px rgb(255, 255, 255) inset;
+    overflow-x: hidden;
 }
-
+.about-wrapper{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(169, 30, 194, 0.979);
+    box-shadow: 0px 0px 50px 5px rgb(255, 255, 255) inset;
+    border-radius: 50%;
+    padding: 7rem 1rem;
+}
 .about {
     text-align: center;
     height: 100%;
-    width: 100%;
-    color: whitesmoke;
-    font-size: clamp(.95rem, 2vw, 3rem);
-    margin: auto 0;
-    padding: 2rem 0 2rem 0;
-    background-color: rgba(0, 0, 0, 0.489);
+    width: 80%;
+    background-color: rgba(167, 44, 189, 0.979);
+    box-shadow: 0px 0px 30px 1px rgb(255, 255, 255) inset;
+    border-radius: 50%;
+    padding: 8rem 0rem;
 }
 
 .about h2 {
-    font-size: 2rem;
-    font-family: "montserrat", sans-serif;
+    font-size: 1.5rem;
+    letter-spacing: .2rem;
+    font-family: 'Monoton', sans-serif;
     color:rgb(253, 167, 6);
-    margin:auto 30% auto auto;
 }
 
 .about h3 {
-    margin:auto 33% auto 5%;
-    font-size: 1.5rem;
-    line-height: 2em;
-    color:white;
-    padding-bottom: 1em;
+    font-size: 1.2rem;
+    line-height: 1.5em;
+    color:rgb(240, 240, 240);
+    padding: 1em;
     text-align: center;
+}
+.about span {
+    font-size: 1.5rem;
+}
+.about p {
+    color:rgb(74, 5, 148);
 }
 
 /* KNOWLEDGE */
@@ -232,6 +247,7 @@ a:focus, button:focus {
     align-items: center;
     justify-content: center;
     width: 100%;
+    margin-top: 1.5rem;
 }
 
 .knowledge h3 {
@@ -256,8 +272,9 @@ a:focus, button:focus {
 
 .skill-container{
     width: 100%;
+    
     margin: 2rem auto;
-    background-color: mediumslateblue;
+    background-color: rgba(167, 44, 189, 0.979);
     box-shadow:0px 20px 30px rgb(61, 61, 61);
 }
 
@@ -276,7 +293,8 @@ a:focus, button:focus {
     text-align: center;
     font-size: clamp(1.8rem, 2vw, 6rem);
     line-height: 2rem;
-    padding: 2rem 0;
+    letter-spacing: .2rem;
+    margin: 3rem 0;
     font-weight: 600;
     color: rgb(255, 132, 0);
     text-align: center;
@@ -286,15 +304,18 @@ a:focus, button:focus {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: center;
     text-align: center;
 }
 .skills li {
     font-family: 'Cinzel';
-    font-size: clamp(1.5rem, 1vw, 5rem);
-    padding: 1.5rem;
+    font-size: clamp(1rem, 1vw, 5rem);
     font-weight: 700;
     color:rgb(255, 255, 255);
+    border-radius: 50%;
+    padding: 5rem 4rem;
+    margin: -2rem -1rem;
+    box-shadow: 3px 15px 25px rgb(196, 166, 247) inset 
 }
 
 /* PROJECTS */
@@ -359,7 +380,7 @@ a:focus, button:focus {
     font-size: clamp(1.8rem, 5vw, 10rem);
     text-align: center;
     line-height: clamp(2rem, 5vw, 5rem);
-    background-color: rgb(253, 95, 95);
+    background-color: rgb(194, 96, 247);
     border-radius: 25%;
     color: white;
 }
@@ -458,25 +479,21 @@ span {
 	}			
 }
 
-@media only screen and (min-width: 320px) and (max-width: 520px) {
-    .dropdown, .dropbtn, .dropdown-content a{
-        display: flex;
-        flex-direction: column;
-    }
-    .dropdown-content a{
-        background-color: rgba(255, 255, 255, 0.918);
-    }
-    .dropbtn{
-        margin-bottom: 1rem;
-    }
-
+@media only screen and (min-width: 320px) and (max-width: 470px) {
+    
     .header {
         height: 50vh;
     }
 
     .about-container{
-        width: 99%;
-        background-position: -250px 10px;
+        align-items: center;
+        justify-content: center;
+        width: 90%;
+        margin-left: -2rem;
+        overflow-X: hidden;
+    }
+    .about span{
+        font-size: .65rem;
     }
     
     .skills{
@@ -487,9 +504,9 @@ span {
         padding: 1.5rem 0;
     }
     .skills li{
-    margin: -1rem;
+        margin: -1.5rem 0;
         border-radius: 50%;
-        padding: 3rem 0;
+        padding: 6rem 3rem;
         box-shadow: 3px 15px 25px rgb(196, 166, 247) inset ;
     }
     .website h1 {
@@ -509,9 +526,34 @@ span {
     }
 }
 
-@media only screen and (min-width: 520px) and (max-width: 900px) {
+@media only screen and (min-width: 470px) and (max-width: 880px) {
+    
     .about-container{
-        width: 80%;
-        background-position: -250px 10px;
+        width: 90%;
+    }
+    .about span {
+        font-size: .8rem;
+    }
+}
+@media only screen and (min-width: 880px) and (max-width: 1400px) {
+    .about-container{
+        width: 60%;
+        margin: 0 auto;
+    }
+    .about span {
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 560px){
+    .dropdown, .dropbtn, .dropdown-content a{
+        display: flex;
+        flex-direction: column;
+    }
+    .dropdown-content a{
+        background-color: rgba(255, 255, 255, 0.918);
+    }
+    .dropbtn{
+        margin-bottom: 1rem;
     }
 }

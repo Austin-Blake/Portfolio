@@ -8,6 +8,7 @@ let isAnimating = false;
 let btn1 = document.getElementById('btn1');
 let btn2 = document.getElementById('btn2');
 let btn3 = document.getElementById('btn3');
+
 let btn = [btn1, btn2, btn3];
 //Menu Open Event Listener//
 //Open Menu, activate animations..css animations included//
@@ -15,7 +16,7 @@ let btn = [btn1, btn2, btn3];
 menu.addEventListener("click", function () {
 	if (!isAnimating) {
 		btn.map((button) => {
-			button.style.backgroundColor = "red";
+			button.style.backgroundColor = "rgb(196, 166, 247)";
 		});
 		drop.style.display = 'block';
 		logo.classList.add("pulse");
@@ -23,7 +24,7 @@ menu.addEventListener("click", function () {
 		isAnimating = !isAnimating;
 	} else {
 		btn.map((button) => {
-			button.style.backgroundColor = "maroon";
+			button.style.backgroundColor = "rgb(48, 8, 118)";
 		})
 		drop.style.display = 'none';
 		logo.classList.remove("pulse");
@@ -36,7 +37,7 @@ menu.addEventListener("click", function () {
 drop.addEventListener("mouseleave", () => {
 	setTimeout(() => {
 		btn.map((button) => {
-			button.style.backgroundColor = "maroon";
+			button.style.backgroundColor = "rgb(48, 8, 118)";
 		})
 	drop.style.display = 'none';
 	logo.classList.remove("pulse");
@@ -65,8 +66,8 @@ const menuOpen = () => {
 			targets: btn2,
 			translateX: [-10],
 			opacity: [1, 0],
-			duration: 200
 		})
+		
 };
 
 //Animation Function for Menu Close//
@@ -84,13 +85,13 @@ const menuClose = () => {
 		targets: btn3,
 		translateY: '0px',
 		rotate: [0],
+		duration: 700
 	})
 		.add({
-			targets: btn2,
-		translateX: '0px',
-		opacity: [0, 1],
-		duration: 50
-	})
+			targets: [btn2],
+			translateX: '0px',
+			opacity: [0, 1],
+		})
 }
 
 // Creates Array from Skill list content, animation displays them to UI//
