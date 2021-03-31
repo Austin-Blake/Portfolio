@@ -8,20 +8,19 @@
 			name="description"
 			content="Web Developer: Austin Blake, Located near Cincinnati Ohio, WebDeveloper Portfolio"
 		/>
-		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1, minimum-scale=1"
+		/>
 		<link rel="stylesheet" href="style.css" type="text/css" />
 		<link rel="stylesheet" href="reset.css" type="text/css" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" />
 		<link rel="html" href="./contact/contact.html" type="text" />
-		<link
-			href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap"
-			rel="stylesheet"
-		/>
-		<link
-			href="https://fonts.googleapis.com/css2?family=Vollkorn&display=swap"
-			rel="stylesheet"
-		/>
+
 		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Vollkorn&display=swap"
+			rel="stylesheet"
+		/>
 		<link
 			href="https://fonts.googleapis.com/css2?family=Monoton&display=swap"
 			rel="stylesheet"
@@ -29,26 +28,22 @@
 		<link rel="icon" href="./assets/Whiskey Jug Logo.png" />
 	</head>
 	<body>
-		<div class="nav-bar">
-			<img
-				role="img"
-				aria-label="Diamond graphic logo"
-				id="art"
-				class="logo"
-				src="./assets/Asset 4@3x.png"
-			/>
+		<div id="nav-bar" class="nav-bar">
+			<div id="nav-banner" class="webdev">
+				<h1 class="secondary-title"><em>FrontEnd WebDeveloper</em></h1>
+			</div>
 			<nav id="ddown" class="dropdown">
-				<button id="btn" class="dropbtn" role="button">
-					
-					<div id="btn1" role="button" tabindex="0"></div>
-					<div id="btn2" role="button" tabindex="0"></div>
-					<div id="btn3" role="button" tabindex="0"></div>
+				<button id="btn" class="dropbtn" role="button" type="button"
+				aria-label="slide out menu button">
+					<div id="btn1" role="layout" ></div>
+					<div id="btn2" role="layout" ></div>
+					<div id="btn3" role="layout" ></div>
 				</button>
 				<div id="content" class="dropdown-content">
-					<a class="mission-nav" href="#">Home</a>
-					<a class="home-nav" href="#my_projects">Projects</a>
-					<a class="about-nav" href="#about">About</a>
-					<a class="contact-nav" href="./contact/contact.html">Contact</a>
+					<a class="mission-nav" href="#" tabindex="0" aria-label="link to home page">Home</a>
+					<a class="home-nav" href="#check-out-projects" tabindex="0" aria-label="link to projects section">Projects</a>
+					<a class="about-nav" href="#welcome" tabindex="0" aria-label="link to about section">About</a>
+					<a class="contact-nav" href="./contact/contact.html" tabindex="0" aria-label="link to contact page">Contact</a>
 				</div>
 			</nav>
 		</div>
@@ -63,31 +58,26 @@
 				/>
 			</div>
 		</header>
-
-		<div class="banner-container">
-			<div class="banner">
-				<h1 class="secondary-title"><em>FrontEnd WebDeveloper</em></h1>
-			</div>
-		</div>
-
 		<section class="about-container">
 			<div class="about-wrapper">
-			<main id="about" class="about">
-				<h2>WHO AM I?</h2>
-				<h3>
-					My name is Austin, I am a web developer located near Cincinnati, Ohio.
-				</h3>
-					<span
-						>const isSpecializing = (react, javaScript) => {<br />
-						return (
-						`My Focus is in ${react} & ${javascript}!` ) };
-					</span
-					><br /><br />
+				<main id="about" class="about">
+					<h1>WHO AM I?</h1>
 					<p>
-						isSpecializing(React, JavaScript);
+						I'm Austin,<br />
+						I am a web developer near Cincinnati, Ohio.
 					</p>
-			</main>
-		</div>
+					<h2>WHY ME?</h2>
+					<p>
+						Because you need a problem solver....<br /><br>Some one who enjoys finding the answers to problems, learning the rapidly changing technology, and someone who has the ability to put that
+						knowledge into your projects.
+					</p>
+					<h1 class="quote">
+						BUILD BETTER,<br />
+						REACH FURTHER,<br />
+						SUCCEED TOGETHER!<br />
+					</h1>
+				</main>
+			</div>
 		</section>
 
 		<main class="main">
@@ -95,7 +85,7 @@
 				<div class="knowledge">
 					<h3>Fundamental Knowledge</h3>
 					<ul id="knowlege-list">
-						<li>TDD</li>
+						<li>Forms</li>
 						<li>Validation</li>
 						<li>ES6 Semantics</li>
 						<li>Responsive Styling</li>
@@ -105,7 +95,7 @@
 			</div>
 			<div class="skill-container">
 				<section class="skills">
-					<h3>Current Skill Set Includes</h3>
+					<h3>Main Skill Set</h3>
 					<ul id="skills-list">
 						<li class="skill">HTML5</li>
 						<li class="skill">CSS3</li>
@@ -119,28 +109,36 @@
 					</ul>
 				</section>
 			</div>
-			<article id="my_projects" class="project-container">
-				<article class="disclaimer">
-					<h3>Check Out My Projects!</h3>
-					<p>
-						Disclaimer:<br />
-						Free Hosting via Netlify -May take a second to load-
-					</p>
-				</article>
-				<article class="my-projects">
-					<section class="website">
-						<a href="https://cain-and-company.netlify.app"
-							><h1>Cain & Co. Boot Supply</h1></a
-						>
-						<a href="https://cain-and-company.netlify.app"
-							><img
-								id="cain"
-								class="project-img"
-								src="newAssests/Artboard 15.jpg"
-								alt="Media not supported"
-								aria-label="Brown Leather Boot, link to Cain and Co."
-						/></a>
-						<article class="project-info">
+			<article id="check-out-projects" class="check-out">
+				<h3>Check Out My Projects!</h3>
+			</article>
+
+			<div class="projects-wrapper">
+				<!-- React Sites -->
+				<article class="project">
+					<button id="react-closebtn" class="closebtn" aria-label="Close React Projects">X</button>
+					<h1>React Projects</h1>
+					<article id="react" class="react-projects">
+						<!-- Cain&Co Project -->
+						<section class="project-a">
+							<a href="https://cain-and-company.netlify.app" target="_blank" tabindex="0" aria-label="link to Cain & Co Boots Supply"
+								><h1>Cain & Co. Boot Supply</h1></a
+							>
+							<a
+								class="image-a"
+								href="https://cain-and-company.netlify.app"
+								target="_blank"
+								tabindex="0"
+								aria-label="link to Cain & Co Boots Supply"
+								><img
+									id="cain"
+									class="project-img"
+									src="newAssests/Artboard 15.jpg"
+									alt="Media not supported"
+									aria-label="Brown Leather Boot, link to Cain and Co."
+							/></a>
+						</section>
+						<section class="project-info">
 							<p>
 								Built using <span>React,</span> utilizing functional components,
 								Context, Router, Hooks, useReducer & styled components.
@@ -163,25 +161,26 @@
 								<br /><br />
 								**(Hard coded actual data & Commented out API fetch)<br /><br />
 							</p>
-							<p>
-								<a href="https://github.com/Austin-Blake/Cain-Co"
-									>GitHub Source Code</a
+							
+								<a href="https://github.com/Austin-Blake/Cain-Co" aria-label="link to github source code" title="Go to github repository" target="_blank"
+									><h4>GitHub Source Code</h4></a
 								>
-							</p>
-						</article>
-					</section>
-					<section class="website">
-						<a href="https://reddit-concave.netlify.app"
-							><h1>Reddit Concave</h1></a
-						>
-						<a href="https://reddit-concave.netlify.app"
-							><img
-								class="project-img"
-								src="newAssests/Artboard 8.jpg"
-								alt="Media not supported"
-								aria-label="person sitting in empty warehouse with burning news paper"
-						/></a>
-						<article class="project-info">
+							
+						</section>
+						<!-- Reddit Project -->
+						<section class="project-a">
+							<a href="https://reddit-concave.netlify.app" target="_blank" aria-label="link to reddit concave" tabindex="0"
+								><h1>Reddit Concave</h1></a
+							>
+							<a class="image-a" href="https://reddit-concave.netlify.app" target="_blank" aria-label="link to reddit concave"
+								><img
+									class="project-img"
+									src="newAssests/Artboard 8.jpg"
+									alt="Media not supported"
+									aria-label="person sitting in empty warehouse with burning news paper"
+							/></a>
+						</section>
+						<section class="project-info">
 							<p>
 								Created using <span>React,</span> functional components.
 								Hooks(useReducer, useEffect), and Axios. <br /><br />
@@ -195,52 +194,73 @@
 								category.
 								<br /><br />
 							</p>
-							<p>
-								<a href="https://github.com/Austin-Blake/Reddit_Conclave"
-									>GitHub Source Code</a
+							
+								<a href="https://github.com/Austin-Blake/Reddit_Conclave" title="Go to github repository" tabindex="0" target="_blank" aria-label="link to github source code"
+									><h4>GitHub Source Code</h4></a
 								>
-							</p>
-						</article>
-					</section>
-					<section class="website">
-						<a href="https://dancross-cpa.netlify.app"
-							><h1>Dan Cross, CPA</h1></a
-						>
+							
+						</section>
+					</article>
+					<button id="react-btn" class="projects-btn" tabindex="0" aria-label="Open/Close React projects" type="button">Click to View</button>
+				</article>
 
-						<a href="https://dancross-cpa.netlify.app"
-							><img
-								class="project-img"
-								src="newAssests/Artboard 10.jpg"
-								alt="Media not supported"
-								aria-label="glass curtin wall building, with cars driving by."
-						/></a>
-						<article class="project-info">
+				<!-- Static Websites -->
+
+				<article class="project">
+					<button id="static-closebtn" class="closebtn" aria-label="close static website projects">X</button>
+					<h1>Static Websites</h1>
+					<article id="static-projects" class="static-projects">
+						<!-- Dan Cross Project-->
+						<section class="project-a">
+							<a href="https://dancross-cpa.netlify.app" target="_blank" aria-label="link to dan cross cpa" tabindex="0"
+								><h1>Dan Cross, CPA</h1></a
+							>
+							<a
+								class="image-a"
+								href="https://dancross-cpa.netlify.app"
+								target="_blank"
+								aria-label="link to dan cross cpa"
+								tabindex="0"
+								><img
+									class="project-img"
+									src="newAssests/Artboard 10.jpg"
+									alt="Media not supported"
+									aria-label="glass curtin wall building, with cars driving by."
+							/></a>
+						</section>
+						<section class="project-info">
 							<p>
 								Built for a local business and Bringing his company a fresh new
 								look. Simple, Static, & Straight to the point.
 								<br /><br />This website was also built from scratch via HTML,
 								CSS, vanilla JS, and Anime.js. <br /><br />
 							</p>
-							<p>
-								<a href="https://github.com/Austin-Blake/DanCrossCPA"
-									>GitHub Source Code</a
+					
+								<a href="https://github.com/Austin-Blake/DanCrossCPA" title="Go to github repository" tabindex="0" target="_blank" aria-label="link to github source code"
+									><h4>GitHub Source Code</h4></a
 								>
-							</p>
-						</article>
-					</section>
-					<div class="website">
-						<a href="https://fullframemoto.netlify.app"
-							><h1>Whiskey City Photography</h1></a
-						>
-						<a href="https://fullframemoto.netlify.app"
-							><img
-								id="projects"
-								class="project-img"
-								src="./assets/Whiskey Jug Logo.png"
-								alt="Media not supported"
-								aria-label="black jug with motorcycle image"
-						/></a>
-						<article
+							
+						</section>
+						<!-- WhiskeyCity Project-->
+						<section class="project-a">
+							<a href="https://fullframemoto.netlify.app" target="_blank" tabindex="0" aria-label="link to Whiskey City"
+								><h1>Whiskey City Photography</h1></a
+							>
+							<a
+								class="image-a"
+								href="https://fullframemoto.netlify.app"
+								target="_blank"
+								aria-label="link to Whiskey City"
+								tabindex="0"
+								><img
+									id="projects"
+									class="project-img"
+									src="./assets/Whiskey Jug Logo.png"
+									alt="Media not supported"
+									aria-label="black jug with motorcycle image"
+							/></a>
+						</section>
+						<section
 							class="project-info"
 							aria-label="Whiskey City Photography project information"
 						>
@@ -254,15 +274,16 @@
 								and Anime.js.
 								<br /><br />
 							</p>
-							<p>
-								<a href="https://github.com/Austin-Blake/FullFrameMoto"
-									>GitHub Source Code</a
+							
+								<a href="https://github.com/Austin-Blake/FullFrameMoto" title="Go to github repository" tabindex="0" aria-label="link to github source code"
+									><h4>GitHub Source Code</h4></a
 								>
-							</p>
-						</article>
-					</div>
+							
+						</section>
+					</article>
+					<button id="static-btn" class="projects-btn" tabindex="0" aria-label="Open/Close Static Site projects">Click to View</button>
 				</article>
-			</article>
+			</div>
 		</main>
 		<footer class="footer">
 			<nav class="footer-nav">
@@ -273,3 +294,23 @@
 		<script src="./index.js" type="module"></script>
 	</body>
 </html>
+
+<!-- <article id="my_projects" class="project-container">
+	
+	<article class="my-projects">
+		<section class="website">
+			
+		<section class="website">
+			
+			
+		</section>
+		<section class="website">
+			
+			
+		</section>
+		<div class="website">
+			
+			
+		</div>
+	</article>
+</article> -->

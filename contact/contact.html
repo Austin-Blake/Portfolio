@@ -14,27 +14,17 @@
   </head>
   <body id="contact-form">
     <div class="nav-bar">
-      <img
-        role="img"
-        aria-label="Diamond graphic logo"
-        id="art"
-        class="logo"
-        src="../assets/Asset 4@3x.png"
-      />
       <nav id="ddown" class="dropdown">
-				<section id="btn" class="dropbtn" role="button">
-					<div id="btn1"  tabindex="0">
-					</div>
-					<div id="btn2" role="button" tabindex="0">
-					</div>
-					<div id="btn3" role="button" tabindex="0">
-				
-				</div>
+				<button id="btn" class="dropbtn" role="button" tabindex="0" aria-label="slide out Menu Button">
+					<div id="btn1" role="layout" ></div>
+					<div id="btn2" role="layout" ></div>
+					<div id="btn3" role="layout" ></div>
+				</button>
 			</section>
 				<div id="content" class="dropdown-content">
 					<a class="mission-nav" href="../index.html">Home</a>
-					<a class="home-nav" href="../index.html#my_projects">Projects</a>
-					<a class="about-nav" href="../index.html#about">About</a>
+					<a class="home-nav" href="../index.html#check-out-projects">Projects</a>
+					<a class="about-nav" href="../index.html#welcome">About</a>
 					<a class="contact-nav" href="#">Contact</a>
 				</div>
 			</nav>
@@ -42,34 +32,37 @@
     <div class="form-container">
       <div class="img">
         <form name="contact" method="POST" data-netlify="true">
-          <label for="first name text">First Name:</label>
+          <label for="first">First Name:</label>
           <input
             id="first"
             name="first"
             type="text"
+            aria-label="first name"
             minlength="3"
             maxlength="100"
             pattern="\w+[a-zA-Z]\"
             required
           />
           <br /><br />
-          <label for="last name text">Last Name:</label>
+          <label for="last">Last Name:</label>
           <input
             id="last"
             name="last"
             type="text"
+            aria-label="last name"
             minlength="3"
             maxlength="100"
             pattern="\w+[a-zA-Z]\"
             required
           />
           <br /><br />
-          <label for="email address text">Email:</label>
+          <label for="email">Email:</label>
           <input
             for="email"
             id="email"
             name="email"
             type="text"
+            label="email address"
             required
             min="3"
             max="100"
@@ -77,7 +70,7 @@
           />
           <br />
           <section class="text-area">
-            <label for="comment/message-text">Comment or Message</label>
+            <label for="text-block">Comment or Message</label>
             <br />
             <textarea
               id="text-block"

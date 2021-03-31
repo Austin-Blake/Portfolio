@@ -1,36 +1,29 @@
 
-/* latin */
-@font-face {
-    font-family: 'Cinzel';
-    font-style: normal;
-    font-weight: 400;
-    font-display: swap;
-    src: url(https://fonts.gstatic.com/s/cinzel/v10/8vIU7ww63mVu7gtR-kwKxNvkNOjw-tbnfYPlDX5Z.woff2) format('woff2');
-    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-  }
 
 body {
     overflow-x: hidden;
     min-width: 320px;
-    font-family: "Vollhorn";
-    background-color: rgb(255, 255, 255);
 }
 .nav-bar {
+    position: fixed;
+    top:0;
+    left: 0;
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    justify-content: end;
     width: 100%;
-    height: fit-content;
-    padding: 2rem 0;
+    height: 2rem;
+    padding: 1rem 0;
+    border-bottom: 2px solid black;
     background-color: rgb(255, 255, 255);
 }
 
 .nav-bar a{
     text-align: center;
     text-decoration: none;
-    color: white;
 }
 .dropdown{
-    position: fixed;
-    top: 2rem;
-    right: 1rem;
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
@@ -40,7 +33,6 @@ body {
 .dropdown .dropbtn {
     display: flex;
     flex-direction: column;
-    margin-left: 1rem;
     cursor: pointer;
 }
 .dropbtn{
@@ -49,40 +41,39 @@ body {
 }
 
 #btn1{
-    width: 40px;
+    width: 30px;
     height: 3.5px;
     margin-bottom: .2rem;
-    background-color: rgb(48, 8, 118);
+    background-color: rgb(0, 0, 0);
 }
 #btn2{
     margin: 0 auto;
-    width: 25px;
+    width: 20px;
     height: 2px;
-    background-color: rgb(48, 8, 118);
+    background-color: rgb(0, 0, 0);
 
 }
 #btn3{
-    width: 40px;
+    width: 30px;
     height: 3.5px;
-    margin-top: .2rem;
-    background-color: rgb(48, 8, 118);
+    margin-top: .25rem;
+    background-color: rgb(0, 0, 0);
 }
 
 a:focus, button:focus {
-    outline: .5px solid rgba(255, 5, 5, 0.081);
+    outline: 1px solid rgb(0, 0, 0);
 }
 
 .dropdown-content {
-    z-index: 10;
-    font-size: clamp(1.2rem, 2vw, 2.5rem);
+    z-index: 999;
+    font-size: clamp(1rem, 3vw, 2.5rem);
     height: fit-content;
     text-align: center;
 }
 
 .dropdown-content a{
-    color: rgb(62, 62, 62);
-    padding: 0 .3rem;
-    
+    color: rgba(167, 44, 189, 0.979);
+    padding-right: clamp(3px, 1vw, 1rem);
 }
 
 .dropdown-content a:hover {
@@ -92,8 +83,24 @@ a:focus, button:focus {
 
 .dropdown .dropdown-content {
     display: none;
-    visibility: visible;
-    
+    visibility: visible; 
+}
+
+/* FrontEnd WebDev */
+
+.webdev{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.secondary-title {
+    text-align: center;
+    font-size: clamp(2rem, 3vw, 4rem);
+    line-height: 1.5rem;
+    font-family: 'Cinzel';
+    color: black;
 }
 
 .animate {
@@ -103,34 +110,16 @@ a:focus, button:focus {
 .pulse {
     animation: pulse 1700ms infinite;
 }
-
-.logo {
-    position: relative;
-    top: 2.1rem;
-    width: 6rem;
-    height: 5.5rem;
-    padding: .5rem;
-    margin-top: -4rem;
-    border-radius: 50%;
-    background-color: rgb(198, 166, 253);
-    box-shadow: 0 0px 35px 20px rgb(54, 16, 83) inset;
-    transform: rotate(-10deg)
-}
   
-.hero-title{
-    width: 50%;
-    height: 50%;    
-}
 .header{
-    background-image: url('newAssests/Artboard 12.jpg');  
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
     width: 100%;
-    height: 80vh;
+    height: 30vh;
     text-align: center;
-    color: #b28e5c;
-    z-index: -1;
+    margin-top: 4rem;
+}
+.hero-title{
+    width: 40%;
+    height: 60%;    
 }
 
 .hero {
@@ -138,35 +127,9 @@ a:focus, button:focus {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    background-color: rgba(42, 7, 74, 0.68);
+    background-color: rgb(0, 0, 0);
     height: 100%;
     width: 100%;
-}
-
-.banner{
-    width: 100%;
-    margin: 2.5rem 0;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    
-}
-
-.banner-img {
-    height: 30%;
-    width: 100%;    
-}
-
-/* FrontEnd WebDev */
-
-.secondary-title {
-    text-align: center;
-    font-size: clamp(2rem, 3vw, 4rem);
-    line-height: 1.5rem;
-    font-family: 'Cinzel';
-    font-weight: 400;
-    color:rgb(31, 30, 37);
 }
 
 /* MAIN */
@@ -178,101 +141,95 @@ a:focus, button:focus {
     flex-direction: column;
     align-content: center;
     justify-content: center;
-    background-color: rgb(255, 255, 255);
 }
 
 /* ABOUT */
 
 .about-container {
     margin: 3rem auto;
-    width: 40%;
+    width: 100%;
     height: 100%;
     display:flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    font-family: "Vollkorn", sans-serif;
-    border-radius: 50%;
-    padding: 4rem 3rem;
-    background-color: rgba(169, 30, 194, 0.979);
-    box-shadow: 0px 0px 80px 10px rgb(255, 255, 255) inset;
-    overflow-x: hidden;
+    background-color: rgba(255, 255, 255, 0.979);
 }
 .about-wrapper{
     display:flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: rgba(169, 30, 194, 0.979);
-    box-shadow: 0px 0px 50px 5px rgb(255, 255, 255) inset;
-    border-radius: 50%;
-    padding: 7rem 1rem;
+    width: 50%;
+    background-color: rgb(253, 167, 6);
+
 }
 .about {
     text-align: center;
     height: 100%;
-    width: 80%;
-    background-color: rgba(167, 44, 189, 0.979);
-    box-shadow: 0px 0px 30px 1px rgb(255, 255, 255) inset;
-    border-radius: 50%;
-    padding: 8rem 0rem;
+    width: 90%;
+    background-color: rgb(255, 255, 255);
+
 }
 
-.about h2 {
-    font-size: 1.5rem;
-    letter-spacing: .2rem;
-    font-family: 'Monoton', sans-serif;
+.about h1, .about h2 {
+    font-family: 'Cinzel', sans-serif;
+    font-size: clamp(1.5rem, 30vw, 2.5rem);
+    line-height: 2.5rem;
     color:rgb(253, 167, 6);
+    margin: 1rem;
 }
 
-.about h3 {
-    font-size: 1.2rem;
-    line-height: 1.5em;
-    color:rgb(240, 240, 240);
-    padding: 1em;
-    text-align: center;
-}
-.about span {
-    font-size: 1.5rem;
-}
 .about p {
-    color:rgb(74, 5, 148);
+    font-size: clamp(1.2rem, 8vw, 2rem);
+    line-height: 1.2em;
+    color:rgb(0, 0, 0);
+    padding: 1rem;
+    text-align: center;
 }
 
 /* KNOWLEDGE */
+.knowledge-container{
+    margin: 1.5rem auto 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    background-color: black;
+    font-family: 'Cinzel';
+}
 
 .knowledge {
+    width: 90%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    width: 100%;
-    margin-top: 1.5rem;
+    background-color: white;
 }
 
 .knowledge h3 {
     text-align: center;
     margin-bottom: 1em;
     line-height: 2.5rem;
-    font-family: 'Cinzel';
     font-weight: 400;
     font-size: clamp(2rem, 3vw, 7rem);
     color: rgb(5, 5, 5);
 }
-
+.knowledge ul{
+    width: 90%;
+}
 .knowledge ul li {
     display:flex;
     justify-content: center;
     padding: 1rem 0;
-    line-height: clamp(2rem, 2vw, 5rem);
-    font-size: clamp(1.8rem, 2vw, 5rem);
+    line-height: clamp(2rem, 5vw, 3rem);
+    font-size: clamp(1.5rem, 5vw, 3rem);
 }
 
 /* SKILLS */
 
 .skill-container{
     width: 100%;
-    
     margin: 2rem auto;
     background-color: rgba(167, 44, 189, 0.979);
     box-shadow:0px 20px 30px rgb(61, 61, 61);
@@ -291,11 +248,10 @@ a:focus, button:focus {
 .skills h3 {
     font-family: 'Monoton';
     text-align: center;
-    font-size: clamp(1.8rem, 2vw, 6rem);
+    font-size: clamp(1.5rem, 5vw, 3rem);
     line-height: 2rem;
     letter-spacing: .2rem;
     margin: 3rem 0;
-    font-weight: 600;
     color: rgb(255, 132, 0);
     text-align: center;
 }
@@ -309,86 +265,105 @@ a:focus, button:focus {
 }
 .skills li {
     font-family: 'Cinzel';
-    font-size: clamp(1rem, 1vw, 5rem);
+    font-size: clamp(1.5rem, 5vw, 2rem);
     font-weight: 700;
     color:rgb(255, 255, 255);
-    border-radius: 50%;
-    padding: 5rem 4rem;
-    margin: -2rem -1rem;
-    box-shadow: 3px 15px 25px rgb(196, 166, 247) inset 
+    padding: 1rem;
 }
 
 /* PROJECTS */
 
-.disclaimer h3 {
-    display: block;
-    font-size: 3rem;
-    padding-top: 1rem;
-    line-height: 2.2rem;
+.projects-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    margin: 1rem;
+}
+.project{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    min-width: 320px;
+    min-height: 200px;
+    color: rgba(167, 44, 189, 0.979);
+    font-size: clamp(2rem, 8vw, 3rem);
+    border: 1px solid black;
+    text-align: center;
+    margin: 2rem;
+}
+.project .react-projects{
+    display: none;
+    visibility: visible;
+}
+.react-projects{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.project .static-projects{
+    display: none;
+    visibility: visible;
+}
+.projects-btn{
+    background-color: rgb(253, 167, 6);
+    padding: .4rem 1rem;
+    font-family: 'Cinzel';
+    letter-spacing: .1rem;
+    cursor: pointer;
+}
+
+.closebtn{
+    display: none;
+    position: relative;
+    top: 0;
+    left: 45%;
+    background-color: transparent;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+.closebtn:hover {
+    color: red;
+    transition: 300ms ease-out;
+}
+
+.project-a{
+    width: 100;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.project-a h1{
+    font-size: clamp(2rem, 5vw, 3rem);
+    line-height: 1.7rem;
+    margin-top: 2rem;
+    color:rgb(253, 167, 6);
     text-align: center;
 }
 
-.project-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-}
 
-.disclaimer {
-    display: block;
-    font-size: clamp(1.3rem, 1vw, 3rem);
-    padding: 1rem;
-    margin-bottom: 2em;
+.check-out h3 {
+    font-family: 'Vollkorn';
+    font-weight: 400;
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    margin-bottom: 2rem;
     text-align: center;
 }
-
-.disclaimer p {
-    padding: 1rem;
-    color: rgb(32, 218, 38);
-    animation: pulse 3000ms infinite;
-}
-
-.disclaimer p:hover{
-    animation: none;
-}
-
-.my-projects {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-}
-
 .project-info{
     display: flex;
     margin: 0 auto;
 }
 
-.website{
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    align-items: center;
-    width: 100%;
-}
-
-.website h1 {
-    padding: 2.5rem;
-    font-size: clamp(1.8rem, 5vw, 10rem);
-    text-align: center;
-    line-height: clamp(2rem, 5vw, 5rem);
-    background-color: rgb(194, 96, 247);
-    border-radius: 25%;
-    color: white;
-}
-
-.website h1:hover{
-    color: black;
+.project-a h1:hover{
+    font-family: 'Monoton';
+    font-weight: 400;
+    background-color: black;
+    padding: 1rem;
     border-radius: 10%;
-    animation: float 10ms ease-in-out 25;
+    animation: float 10ms ease-in-out 8;
     transition: 100ms ease-in;
     
 }
@@ -397,23 +372,23 @@ span {
     color: rgb(253, 167, 6);
 }
 
-.website a {
-    font-size: 1.5rem;
-    padding: 1.3rem;
-    color: rgb(112, 69, 221);
-    margin: 0 auto;
+.image-a {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    margin: 2rem 0;
 }
 
 .project-img {
     box-shadow: 10px 10px 5px rgb(61, 61, 61);
     border-radius: 8%;
     background-color: transparent;
-    height: 15rem;
-    margin: 3rem;
+    width: 100%;
+    margin-bottom: 2rem;
 }
 .project-img:hover{
-    transform: scale(1.6);
-    transition: 400ms ease;
+    transform: scale(1.1);
+    transition: 800ms ease;
 }
 
 #projects{
@@ -425,11 +400,16 @@ span {
     flex-direction: column;
     padding: 0 1rem;
     max-width: 35rem;
-    font-size: 1.3rem;
+    font-size: clamp(1.3rem, 5vw, 2rem);
     text-align: center;
     margin-bottom: 2rem;
     font-family: "Vollkorn";
+    font-weight: 400;
     border-bottom: 3px solid black;
+}
+
+.project-info h4{
+    color: rgb(253, 167, 6);
 }
 
 /* FOOTER */
@@ -479,81 +459,41 @@ span {
 	}			
 }
 
-@media only screen and (min-width: 320px) and (max-width: 470px) {
-    
-    .header {
-        height: 50vh;
+@media only screen and (min-width: 320px) and (max-width: 870px) {
+    .hero-title{
+        width: 80%;
+        height: 80%;    
     }
-
-    .about-container{
-        align-items: center;
-        justify-content: center;
-        width: 90%;
-        margin-left: -2rem;
-        overflow-X: hidden;
-    }
-    .about span{
-        font-size: .65rem;
+    .about-wrapper{
+        width: 100%;
     }
     
-    .skills{
-        box-shadow: 0px 0px 100rem 100px rgb(31, 4, 78) inset;
+    .knowledge{
+        width: 100%;
     }
-    .skills ul{
+    .image-a {
+        width: 75%;
+    }
+    .projects-wrapper{
+        display: flex;
         flex-direction: column;
-        padding: 1.5rem 0;
+        justify-content: center;
+        align-items: center;
+        
     }
-    .skills li{
-        margin: -1.5rem 0;
-        border-radius: 50%;
-        padding: 6rem 3rem;
-        box-shadow: 3px 15px 25px rgb(196, 166, 247) inset ;
-    }
-    .website h1 {
-        width: 100%;
-        padding: .2rem;
-        text-align: center;
-        border-radius: 0;
-    }
-    .project-img {
-        width: 100%;
-        margin: .2rem auto;
-    }
-    .project-info{
-        text-align: left;
-        width: 90%;
-        margin: 0 auto;
+    .projects{
+    
+        
     }
 }
 
 @media only screen and (min-width: 470px) and (max-width: 880px) {
-    
-    .about-container{
-        width: 90%;
-    }
-    .about span {
-        font-size: .8rem;
-    }
+
 }
 @media only screen and (min-width: 880px) and (max-width: 1400px) {
-    .about-container{
-        width: 60%;
-        margin: 0 auto;
-    }
-    .about span {
-        font-size: 1rem;
-    }
+
 }
 
 @media only screen and (min-width: 320px) and (max-width: 560px){
-    .dropdown, .dropbtn, .dropdown-content a{
-        display: flex;
-        flex-direction: column;
-    }
-    .dropdown-content a{
-        background-color: rgba(255, 255, 255, 0.918);
-    }
-    .dropbtn{
-        margin-bottom: 1rem;
-    }
+
 }
