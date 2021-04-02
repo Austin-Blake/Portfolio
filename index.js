@@ -149,6 +149,10 @@ const staticBtn = document.getElementById('static-btn');
 const staticProjects = document.getElementById('static-projects');
 const reactCloseBtn = document.getElementById('react-closebtn');
 const staticCloseBtn = document.getElementById('static-closebtn');
+const react = document.getElementById('project1')
+const reactH1 = document.getElementById('projectH1');
+const staticH1 = document.getElementById('statich1')
+const staticBox = document.getElementById('static-sites');
 let isReactOpen = false;
 let isStaticSiteOpen = false;
 
@@ -178,6 +182,34 @@ const staticClose = () => {
 		isStaticSiteOpen = !isStaticSiteOpen;
 };
 
+//Animation for Color Flash animation//
+function reactFlash() {
+	return anime({
+		targets: reactH1,
+		  color: ["#61dbfb","#000000",
+		],
+		easing: 'easeOutElastic(2, .5)',
+		  loop: 5
+	});
+}
+
+function staticFlash() {
+	return anime({
+		targets: staticH1,
+		color: ["#61dbfb","#000000",
+	],
+		easing: 'easeOutElastic(7, .5)',
+		loop: 5
+	});
+}
+//Event Listeners for Flash animation//
+
+react.addEventListener("mouseenter", () => {
+	reactFlash();
+});
+staticBox.addEventListener("mouseenter", () => {
+	staticFlash();
+});
 //EventListener for React//
 
 reactBtn.addEventListener("click", () => {
