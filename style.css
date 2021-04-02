@@ -286,7 +286,7 @@ a:focus {
     align-items: center;
     min-width: 320px;
     min-height: 200px;
-    padding: 3rem;
+    padding: 2rem;
     color: rgba(255, 255, 255, 0.979);
     font-size: clamp(2rem, 8vw, 3rem);
     border: .5rem solid rgb(0, 0, 0);
@@ -415,7 +415,7 @@ span {
 }
 
 .project-info h4{
-    color: rgb(253, 167, 6);
+    color: rgb(253, 6, 6);
 }
 
 /* FOOTER */
