@@ -186,20 +186,20 @@ const staticClose = () => {
 function reactFlash() {
 	return anime({
 		targets: reactH1,
-		  color: ["#61dbfb","#000000",
+		  color: ["#29b6b1","#fff",
 		],
-		easing: 'easeOutElastic(2, .5)',
-		  loop: 5
+		easing: 'easeOutElastic(2, .1)',
+		  loop: 4
 	});
 }
 
 function staticFlash() {
 	return anime({
 		targets: staticH1,
-		color: ["#61dbfb","#000000",
+		color: ["#29b6b1","#fff",
 	],
-		easing: 'easeOutElastic(7, .5)',
-		loop: 5
+		easing: 'easeOutElastic(2, .1)',
+		loop: 4
 	});
 }
 //Event Listeners for Flash animation//
