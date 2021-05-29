@@ -1,9 +1,23 @@
+/*Index:
+TOP TO BOTTOM
 
+NAV
+FRONTEND DEV.
+MAIN
+ABOUT
+KNOWLEDGE
+SKILLS 
+PROJECTS
+FOOTER
+MEDIA QUERY
+
+*/
 
 body {
     overflow-x: hidden;
     min-width: 320px;
 }
+/*----------------------------- NAV ------------------------*/
 .nav-bar {
     position: fixed;
     top:0;
@@ -72,13 +86,13 @@ a:focus {
 }
 
 .dropdown-content a{
-    color: rgba(167, 44, 189, 0.979);
+    color: #FDA706;
     padding-right: clamp(3px, 1vw, 1rem);
 }
 
 .dropdown-content a:hover {
-    background-color: rgba(0, 0, 0, 0.408);
-    color: white;
+    
+    color: rgb(0, 0, 0);
 }
 
 .dropdown .dropdown-content {
@@ -86,7 +100,7 @@ a:focus {
     visibility: visible; 
 }
 
-/* FrontEnd WebDev */
+/*------------------------ FRONTEND DEV. -----------------------------------------------------*/
 
 .webdev{
     width: 100%;
@@ -132,7 +146,7 @@ a:focus {
     width: 100%;
 }
 
-/* MAIN */
+/*-------------------------- MAIN -------------------------------------------------------*/
 
 .main {
     width: 100%;
@@ -143,7 +157,7 @@ a:focus {
     justify-content: center;
 }
 
-/* ABOUT */
+/*-------------------------- ABOUT ----------------------------------------------------------*/
 
 .about-container {
     margin: 3rem auto;
@@ -160,7 +174,7 @@ a:focus {
     align-items: center;
     justify-content: center;
     width: 50%;
-    background-color: rgba(23, 23, 23, 0.217);
+    background-color: rgb(23, 23, 23);
 
 }
 .about {
@@ -191,7 +205,7 @@ a:focus {
     
 }
 
-/* KNOWLEDGE */
+/*--------------------------- KNOWLEDGE ---------------------------------------------*/
 .knowledge-container{
     margin: 5rem auto 0 auto;
     display: flex;
@@ -215,9 +229,9 @@ a:focus {
     text-align: center;
     margin-bottom: 1em;
     line-height: 2.5rem;
-    font-weight: 400;
+    font-weight: 600;
     font-size: clamp(2rem, 3vw, 7rem);
-    color: rgb(5, 5, 5);
+    color: #FDA706;
 }
 .knowledge ul{
     width: 90%;
@@ -230,7 +244,7 @@ a:focus {
     font-size: clamp(1.5rem, 5vw, 3rem);
 }
 
-/* SKILLS */
+/*------------------------ SKILLS ------------------------------------------------*/
 
 .skill-container{
     width: 100%;
@@ -275,7 +289,7 @@ a:focus {
     padding: 1rem;
 }
 
-/* PROJECTS */
+/*------------------ PROJECTS --------------------------------------*/
 
 .projects-wrapper{
     display: flex;
@@ -296,23 +310,20 @@ a:focus {
     border: .1rem solid rgba(0, 0, 0, 0.123);
     text-align: center;
     margin: 2rem;
-    background-color:rgba(23, 23, 23, 0.217);
-    box-shadow: 40px 50px 60px 15px black;
+    background-color: rgb(117, 45, 165);
+    box-shadow: 20px 50px 100rem rgb(63, 40, 10) inset;
 }
-.project .react-projects{
+.project .react-projects, .project .static-projects{
     display: none;
     visibility: visible;
 }
+
 .react-projects{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.project .static-projects{
-    display: none;
-    visibility: visible;
-}
 .projects-btn{
     background-color: rgb(0, 0, 0);
     color: white;
@@ -426,7 +437,7 @@ span {
     color: rgb(253, 6, 6);
 }
 
-/* FOOTER */
+/*------------- FOOTER ----------------------------------------------*/
 
 .footer {
     text-align: center;
@@ -473,6 +484,7 @@ span {
 	}			
 }
 
+/*--------------------- MEDIA QUERY ------------------------------------------------------*/
 @media only screen and (min-width: 320px) and (max-width: 870px) {
     .hero-title{
         width: 80%;
@@ -480,10 +492,12 @@ span {
     }
     .about-wrapper{
         width: 100%;
+        background-color: #FDA706;
     }
     
     .knowledge{
-        width: 100%;
+        width: 80%;
+        text-align: center;
     }
     .image-a {
         width: 75%;

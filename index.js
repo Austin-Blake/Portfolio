@@ -186,7 +186,7 @@ const staticClose = () => {
 function reactFlash() {
 	return anime({
 		targets: reactH1,
-		  color: ["#29b6b1","#fff",
+		  color: ["#fff","#FDA706"
 		],
 		easing: 'easeOutElastic(2, .1)',
 		  loop: 4
@@ -196,7 +196,7 @@ function reactFlash() {
 function staticFlash() {
 	return anime({
 		targets: staticH1,
-		color: ["#29b6b1","#fff",
+		color: ["#fff","#FDA706"
 	],
 		easing: 'easeOutElastic(2, .1)',
 		loop: 4
